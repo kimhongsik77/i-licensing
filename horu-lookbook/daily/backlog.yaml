@@ -5,7 +5,7 @@
   scope: "P1 4명(VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01) × 3뷰 = 12컷 → 사장님 확인 후 P2·P3 8명(24컷)"
   prompts: "python3 horu-lookbook/scripts/model_prompts.py sheet --id <모델ID>"
   tool_need: image_gen
-  status: 승인 대기
+  status: 진행 (2026-11-20 사장님 채팅 승인 "모델작업 지금하자")
   done_when: "모델별 3뷰 얼굴·체형 일치 확인 → model_registry.yaml status를 approved로 변경"
 - id: BL-002
   title: "Phase 1 비모델 컷 착수 (가방·캡 누끼, 텀블러 누끼·연출)"

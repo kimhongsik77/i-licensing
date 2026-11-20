@@ -1,32 +1,57 @@
-# 툴 순서표 (주자 순서) — 초기설정 v0.1 (2026-11-20)
-# status: draft = 사장님 확인 전. 순서·크레딧은 확인 후 'confirmed'로 바꾼다.
 status: draft
-level: 1            # 0=매번 승인, 1=전환 후 알림(사장님 선택 2026-11-20), 2=완전 자동
-
-# 역할(capability): image_gen=이미지 생성, bg_remove=누끼, expand=배경확장, layout=레이아웃, mockup=목업합성
+level: 1
 tools:
-  - name: Canva
-    order: 1
-    enabled: true
-    capabilities: [layout, image_gen, bg_remove, mockup]
-    credit: {remaining: null, unit: "확인 필요", reset: "확인 필요"}   # null = 아직 모름
-  - name: Adobe Express/Firefly
-    order: 2
-    enabled: true
-    capabilities: [image_gen, bg_remove, expand, layout, mockup]
-    credit: {remaining: null, unit: "확인 필요", reset: "확인 필요"}
-  - name: Figma
-    order: 3
-    enabled: true
-    capabilities: [layout, mockup, image_gen]
-    credit: {remaining: null, unit: "확인 필요", reset: "확인 필요"}
-  - name: 이미지생성AI(이름 확인 필요)
-    order: 4
-    enabled: false            # 툴 이름을 받으면 true로 변경
-    capabilities: [image_gen]
-    credit: {remaining: null, unit: "확인 필요", reset: "확인 필요"}
-
-upgrade_rules:            # 단계 상향은 '제안'만 하고, 사장님 OK가 있어야 바뀐다
-  to_level_1: {clean_switches: 5}
-  to_level_2: {qa_pass_streak: 10}
-  downgrade_on: [qa_fail_after_switch, wrong_style]
+- name: Canva
+  order: 1
+  enabled: true
+  capabilities:
+  - layout
+  - image_gen
+  - bg_remove
+  - mockup
+  credit:
+    remaining: 0
+    unit: 확인 필요
+    reset: 확인 필요
+    note: 2026-11-21 generate-image quota_exceeded — 무료 AI 크레딧 소진, 초기화 시 refill
+- name: Adobe Express/Firefly
+  order: 2
+  enabled: true
+  capabilities:
+  - bg_remove
+  - expand
+  - layout
+  - mockup
+  credit:
+    remaining: 0
+    unit: 확인 필요
+    reset: 확인 필요
+    note: '2026-11-21 확인: 이 연결 환경에서 텍스트→이미지 생성 미제공 (편집·배경확장만). image_gen 역할 제외'
+- name: Figma
+  order: 3
+  enabled: true
+  capabilities:
+  - layout
+  - mockup
+  - image_gen
+  credit:
+    remaining: null
+    unit: 확인 필요
+    reset: 확인 필요
+- name: 이미지생성AI(이름 확인 필요)
+  order: 4
+  enabled: false
+  capabilities:
+  - image_gen
+  credit:
+    remaining: null
+    unit: 확인 필요
+    reset: 확인 필요
+upgrade_rules:
+  to_level_1:
+    clean_switches: 5
+  to_level_2:
+    qa_pass_streak: 10
+  downgrade_on:
+  - qa_fail_after_switch
+  - wrong_style

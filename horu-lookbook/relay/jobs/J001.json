@@ -1,0 +1,56 @@
+{
+  "id": "J001",
+  "task": "BL-001 모델 기준 시트 P1 4명 (턴어라운드 1장씩)",
+  "need": "image_gen",
+  "prompt": "scripts/model_prompts.py 기준 시트 프롬프트(정면·측면·후면 1장 구성)",
+  "refs": [],
+  "style_card": "style_card.yaml",
+  "current_tool": "Figma",
+  "status": "완료",
+  "progress": [
+    {
+      "time": "2026-11-21 07:05",
+      "note": "[Canva] VM-F-EA01부터 4장 전부 남음 (Canva quota_exceeded)"
+    },
+    {
+      "time": "2026-11-21 07:05",
+      "note": "[Adobe Express/Firefly] 이미지 생성 기능 미제공 → 4장 전부 남음"
+    },
+    {
+      "time": "2026-11-21 07:08",
+      "note": "[Figma] P1 4명 기준 시트 생성 완료 (Figma gpt-image-2.5-flare, 1536x864)"
+    }
+  ],
+  "outputs": [
+    "assets/models/P1_model_sheets_contact.png"
+  ],
+  "tool_history": [
+    {
+      "time": "2026-11-21 07:05",
+      "tool": "Canva",
+      "event": "assigned"
+    },
+    {
+      "time": "2026-11-21 07:05",
+      "tool": "Canva",
+      "event": "credit_out"
+    },
+    {
+      "time": "2026-11-21 07:05",
+      "tool": "Adobe Express/Firefly",
+      "event": "assigned"
+    },
+    {
+      "time": "2026-11-21 07:05",
+      "tool": "Adobe Express/Firefly",
+      "event": "credit_out"
+    },
+    {
+      "time": "2026-11-21 07:05",
+      "tool": "Figma",
+      "event": "assigned"
+    }
+  ],
+  "created": "2026-11-21 07:05",
+  "qa": "pass"
+}

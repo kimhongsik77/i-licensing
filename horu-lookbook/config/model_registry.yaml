@@ -5,7 +5,7 @@
 #   - 의상은 '로고 없는 무지'로 생성 → HÖRU 로고는 placement_matcher.py로 후합성 (AI 로고 생성 금지)
 #   - 체형 묘사는 '건강한 슬림·탄탄한 체형' — 지나치게 마른 모습은 브랜드(액티브·자연) 이미지와 맞지 않아 네거티브 처리
 #   - 한 라인(룩) 안에서는 모델 최대 2명 (qa_check 일관성 규칙)
-# status: candidate = 기준 시트 생성·사장님 확인 전 / approved = 확정
+# status: candidate = 시트 생성 전 / sheet_ready = 시트 생성·사장님 확인 대기 / approved = 확정
 
 prompt_template:
   base: >-
@@ -21,21 +21,21 @@ prompt_template:
 
 models:
   # ---------- P1: 국내 주력 시장 ----------
-  VM-F-EA01: {status: candidate, priority: P1, gender: female, age: 20, height_cm: 172, weight_kg: 50,
+  VM-F-EA01: {status: sheet_ready, sheet: assets/models/VM-F-EA01_sheet_v1.png, sheet_note: \"시트 v1 양호\", priority: P1, gender: female, age: 20, height_cm: 172, weight_kg: 50,
               ethnicity: "동아시아(한국)", ethnicity_en: "East Asian Korean",
               build: "healthy slim toned build, long legs", hair: "straight black hair in a low bun", face: "oval face, soft double eyelids, natural brows",
               skin: "light warm skin tone", markets: [KR, JP, CN], categories: [athleisure, young_casual, bag, tumbler],
               note: "SS27 모델 B와 동일 계열 — 기존 컷과 톤 연결"}
-  VM-M-EA01: {status: candidate, priority: P1, gender: male, age: 23, height_cm: 186, weight_kg: 73,
+  VM-M-EA01: {status: sheet_ready, sheet: assets/models/VM-M-EA01_sheet_v1.png, sheet_note: \"시트 v1 양호\", priority: P1, gender: male, age: 23, height_cm: 186, weight_kg: 73,
               ethnicity: "동아시아(한국)", ethnicity_en: "East Asian Korean",
               build: "lean athletic build, broad shoulders", hair: "short black textured hair", face: "sharp jawline, monolid eyes",
               skin: "light neutral skin tone", markets: [KR, JP, CN], categories: [athleisure, young_casual, cap, bag]}
-  VM-F-NE01: {status: candidate, priority: P1, gender: female, age: 20, height_cm: 174, weight_kg: 50,
+  VM-F-NE01: {status: sheet_ready, sheet: assets/models/VM-F-NE01_sheet_v1.png, sheet_note: \"시트 v1 양호(머리색이 지정보다 진함)\", priority: P1, gender: female, age: 20, height_cm: 174, weight_kg: 50,
               ethnicity: "북유럽(스칸디나비아)", ethnicity_en: "Northern European Scandinavian",
               build: "healthy slim toned build", hair: "long light brown hair, natural waves", face: "high cheekbones, light grey-blue eyes, light freckles",
               skin: "fair cool skin tone", markets: [EU, GLOBAL, KR], categories: [athleisure, young_casual, cap],
               note: "SS27 모델 A와 동일 계열 — 브랜드 노르딕 정체성 대표"}
-  VM-M-NE01: {status: candidate, priority: P1, gender: male, age: 23, height_cm: 188, weight_kg: 74,
+  VM-M-NE01: {status: sheet_ready, sheet: assets/models/VM-M-NE01_sheet_v1.png, sheet_note: \"시트 v1 — 23세보다 성숙해 보임, 재생성 검토\", priority: P1, gender: male, age: 23, height_cm: 188, weight_kg: 74,
               ethnicity: "북유럽(스칸디나비아)", ethnicity_en: "Northern European Scandinavian",
               build: "lean athletic build", hair: "short dark blond hair", face: "straight nose, light blue eyes, light stubble",
               skin: "fair skin tone", markets: [EU, GLOBAL], categories: [athleisure, young_casual, bag, cap]}
