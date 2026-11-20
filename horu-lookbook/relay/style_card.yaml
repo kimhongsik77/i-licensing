@@ -1,0 +1,11 @@
+# 스타일 카드 (호루 정답지) — 모든 툴이 작업 전에 먼저 적용
+# status: pending = D 드라이브 스타일가이드 학습 전. 학습 후 사장님 확인을 받아 confirmed로 변경.
+status: pending
+source: "D 드라이브 호루 스타일가이드 (연결 대기)"
+# 아래는 Drive 제작지침 v1.0 기준 임시값 — D 원본과 대조 후 확정
+palette: ["#040000", "#1E5786", "#2E4032", "#1A1E36", "#A89C89", "#FFFFFF"]
+fonts: {display: Cambria, body: Arial}
+mood: ["북유럽 미니멀", "자연광", "넉넉한 여백", "톤다운 자연색"]
+forbidden: ["국가명(스웨덴 등)", "랜드마크", "경쟁사 문구", "AI 결함(깨진 글자·손)"]
+prompt_suffix: ""        # 학습 후 툴 공통으로 붙일 스타일 문장 (확인 후 채움)
+negative_prompt: ""      # 학습 후 채움
