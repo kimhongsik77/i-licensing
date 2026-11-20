@@ -1,0 +1,30 @@
+# 벤치마크 모델 & 촬영 레시피 (shot_recipes) — 리서치 기준일 2026-11-20
+# 레시피는 '구성 문법'만 기록. 경쟁사 로고·문구·이미지 사용 금지.
+# relay 작업 카드 prompt에 recipe를 붙여 생성 → qa_check + 갭 점수로 평가
+status: draft   # 사장님 확인 후 confirmed
+categories:
+  athleisure:
+    models: {global: Vuori, korea: [부디무드라, 룰루레몬 코리아], sub: [Aim'n]}
+    shot_recipes:
+      - "trail-to-town: 해안·숲길 아침 자연광 → 같은 착장으로 도심 카페, 2컷 쌍"
+      - "실제 같은 30~40대 캐스팅, 정적 포즈(스트레칭·걷기), 바랜 샌드·세이지·네이비"
+  young_casual:
+    models: {global: Norse Projects, korea: 산산기어, sub: [무신사 스탠다드(상품구성), 디미트리블랙(커브드 실루엣)]}
+    shot_recipes:
+      - "북유럽 자연 로케이션 + 미니멀 건축 배경 교차, 자연광, 네이비·딥그린·샌드"
+      - "기능 소재 디테일 클로즈업 1컷 / 전신 실루엣 컷 2컷 (커브드·와이드 팬츠)"
+  bag:
+    models: {global: Sandqvist, korea: 살로몬 Trailblazer 상세페이지, sub: [Db(올블랙 히어로)]}
+    shot_recipes:
+      - "무배경 정면·3/4·측면 패스샷 + 용량 비교 1컷 + 등판·하네스 디테일"
+      - "숲·호수 착용컷, 부엉이 심볼 톤온톤 소형 패치"
+  cap:
+    models: {global: Satisfy PeaceShell, korea: 이미스, sub: [Norse Projects]}
+    shot_recipes:
+      - "정면·3/4·후면 3컷 표준 + 접힌 상태 디테일, 컬러칩 3~5색 그리드"
+      - "정면 소형 톤온톤 자수(크기는 샘플 확인 후 확정), 트레일 러닝 착용"
+  tumbler:
+    models: {global: KINTO Day Off, korea: 락앤락 블리쏘울, sub: [Stelton(컬러 그리드)]}
+    shot_recipes:
+      - "카페 테이블 자연광 + 넓은 여백, 로고 작은 각인"
+      - "5색 컬러 그리드(블랙·네이비·딥그린·샌드·화이트) + 용량별 200/400/700ml 라인업"
