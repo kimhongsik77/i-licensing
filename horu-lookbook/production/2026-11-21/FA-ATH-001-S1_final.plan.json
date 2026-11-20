@@ -1,0 +1,26 @@
+{
+  "steps": [
+    {
+      "placement": "left_hip",
+      "asset": "wordmark",
+      "technique": "reflective",
+      "render_as": "reflective",
+      "color": "auto",
+      "label_color": null,
+      "center_px": [
+        549,
+        617
+      ],
+      "width_cm": 5.5,
+      "width_px": 38,
+      "stroke_mm": 3.63,
+      "text_mm": null,
+      "replaced": [],
+      "look": "매끈한 필름층, 플래시 받으면 은회색",
+      "src": "Apliiq 바지 배치 (검색 요약)"
+    }
+  ],
+  "skipped": [
+    "waistband_back: 사진 방향 front ≠ 위치 방향 back → 이 컷에선 생략"
+  ]
+}

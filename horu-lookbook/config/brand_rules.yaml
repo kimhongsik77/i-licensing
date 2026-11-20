@@ -80,6 +80,11 @@ image:
   max_clipped_highlight_ratio: 0.02    # 255 근처 픽셀 비율 상한
   min_sharpness: 60                     # 라플라시안 분산 근사값 (낮으면 블러 의심)
 
+ai_disclosure:                  # 한국 AI 기본법(2026-01-22 시행) 대응 권장 — 의무 주체 해석 엇갈림, 법무 확인 전까지 '경고'로 운영
+  applies_to: "가상모델(model_id 있는) 컷"
+  text: ["AI 생성 이미지", "AI-generated image"]
+  blocker: false
+
 virtual_model_policy:          # [결정 필요] 지침 v1.0은 'AI 티 나는 이미지 금지'만 규정
   allowed: true
   label_required: true          # Model Reference 시트에 'VIRTUAL' 표기

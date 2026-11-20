@@ -1,7 +1,8 @@
 # HÖRU 로고 배치 학습 라이브러리 v1 (2026-11-20)
 # 근거: 업계 장식 가이드(Shopify·Vistaprint·Printful·SanMar 스펙시트·자수/DTF/우븐 라벨 규격) + 벤치마크 판매처 자료
 #       → 출처 목록은 research/06_logo_placement_research.md. '추정' 표시는 검증 안 된 값.
-# 좌표 규칙: offset_cm [dx, dy] = 기준점(landmark)에서의 거리. dx(+) = 착용자 왼쪽(정면 사진에서는 화면 오른쪽), dy(+) = 아래
+# 좌표 규칙: offset_cm [dx, dy] = 기준점(landmark)에서의 거리 (기본: 로고 '중심'까지).
+#            anchor: edge → dx는 로고 '가장자리'까지 거리 (업계 '옆선에서 1in 안쪽' 규칙) — 매칭기가 폭/2만큼 더 안쪽으로 이동. dx(+) = 착용자 왼쪽(정면 사진에서는 화면 오른쪽), dy(+) = 아래
 #            width_cm = 로고 가로폭(실물). 매칭기가 px_per_cm로 픽셀 환산.
 
 # ---------- 가공 방식 최소 규격 (실물 mm) ----------
@@ -40,7 +41,7 @@ products:
     landmarks: {waist_back: "뒤 허리밴드 중앙", hip_left: "왼쪽 허리 옆선 지점"}
     placements:
       waistband_back: {view: back, landmark: waist_back, offset_cm: [0, 2], width_cm: [3, 6], techniques: [silicone, reflective, print], src: "lululemon Align 뒤 허리 로고 (판매처 확인), 크기 추정"}
-      left_hip:       {view: front, landmark: hip_left, offset_cm: [-2.5, 20], width_cm: [3, 8], techniques: [print, reflective, silicone, embroidery], src: "Apliiq 바지 배치 (검색 요약)"}
+      left_hip:       {view: front, landmark: hip_left, offset_cm: [-2.5, 20], anchor: edge, width_cm: [3, 8], techniques: [print, reflective, silicone, embroidery], src: "Apliiq 바지 배치 (검색 요약)"}
       ankle:          {view: front, landmark: hem_left, offset_cm: [0, -6], width_cm: [2, 5], techniques: [reflective, silicone], src: "레깅스 발목 2in 이하"}
       back_pocket:    {view: back, landmark: pocket_back, offset_cm: [0, 0], width_cm: [3, 5], techniques: [embroidery, leather_patch, woven_label], src: "추정"}
   cap:

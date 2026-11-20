@@ -47,6 +47,37 @@ tools:
     remaining: null
     unit: 확인 필요
     reset: 확인 필요
+- name: 로컬 Z-Image Turbo / FLUX.2 klein 4B
+  order: 5
+  enabled: false
+  capabilities:
+  - image_gen
+  credit:
+    remaining: null
+    unit: 확인 필요
+    reset: 확인 필요
+    note: 사장님 PC GPU(VRAM 13~16GB 추정) 확인 후 활성화 — 무제한·상업이용 가능(Apache 2.0). klein 9B는
+      비상업이라 사용 금지
+- name: Gemini 앱 (수동)
+  order: 6
+  enabled: false
+  capabilities:
+  - image_gen
+  credit:
+    remaining: null
+    unit: 확인 필요
+    reset: 확인 필요
+    note: 수동 생성 → Drive 07_수동생성_투입함. 한국 무료는 보이는 워터마크 → 시안·참조용만
+- name: ChatGPT 무료 (수동)
+  order: 7
+  enabled: false
+  capabilities:
+  - image_gen
+  credit:
+    remaining: null
+    unit: 확인 필요
+    reset: 확인 필요
+    note: 수동 생성 → 투입함. 하루 2~3장(추정) 소량 보충
 upgrade_rules:
   to_level_1:
     clean_switches: 5

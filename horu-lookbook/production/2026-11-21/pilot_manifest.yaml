@@ -1,0 +1,11 @@
+document: {title: "Phase 1 시범 생산 FA-ATH-001-S1", preset: web}
+model_registry_file: ../../config/model_registry.yaml
+pages:
+  - id: FA-ATH-001-S1
+    template: T05_portrait_scene
+    image: FA-ATH-001-S1_final.png
+    model_id: VM-F-EA01
+    has_logo: true
+    text: ""
+    fields: {scene_tag: studio}
+    logo_review: {shape_fidelity: 4, lighting: 4, surface_follow: 4, material: 3, scale_position: 5}

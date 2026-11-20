@@ -201,6 +201,16 @@ def check_logo_review(page, rules, rep):
                 f"{key} {v if v is not None else '미검수'}/5 (기준 {need}) — {desc}")
 
 
+def check_ai_disclosure(page, rules, rep):
+    """가상모델 컷에 'AI 생성' 표기가 있는지 (경고 수준, 블로커 아님)."""
+    rule = rules.get("ai_disclosure")
+    if not rule or not page.get("model_id"):
+        return
+    txt = (page.get("text") or "") + " " + (page.get("caption") or "")
+    ok = bool(page.get("ai_disclosure")) or any(t in txt for t in rule["text"])
+    rep.add(page["id"], "info", ok, "AI 생성 표기 " + ("있음" if ok else "없음 — 캡션·하단에 'AI 생성 이미지' 표기 권장"))
+
+
 def check_info(page, spec, rep):
     tpl = spec["templates"].get(page["template"])
     if tpl is None:
@@ -295,6 +305,7 @@ def main():
         check_image(p, rules, spec, base, preset, rep)
         check_info(p, spec, rep)
         check_logo_review(p, rules, rep)
+        check_ai_disclosure(p, rules, rep)
     check_consistency(pages, spec, registry, rep)
     check_model_specs(raw_registry, rules, rep)
     check_document(pages, rules, rep)

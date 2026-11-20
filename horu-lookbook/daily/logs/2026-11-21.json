@@ -14,5 +14,13 @@
     "finished": 1,
     "failed": 0,
     "time": "07:11"
+  },
+  {
+    "tool": "Figma",
+    "kind": "model_fit",
+    "ops": 1,
+    "finished": 0,
+    "failed": 1,
+    "time": "07:59"
   }
 ]

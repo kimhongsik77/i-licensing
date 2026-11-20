@@ -105,6 +105,8 @@ def plan(product, benchmark, view, ppc, landmarks, size="mid"):
             reasons.append("⚠ 부엉이 심볼 단독 사용(예외) — 다른 로고가 모두 규격 미달. 사장님 확인 필요")
         dx, dy = p["offset_cm"]
         sign = 1 if view in ("front", "side") else -1               # 정면: 착용자 왼쪽 = 화면 오른쪽
+        if p.get("anchor") == "edge":                              # 가장자리 기준 → 로고 폭 절반만큼 더 안쪽
+            dx = dx + (wcm / 2 if dx >= 0 else -wcm / 2)
         cx, cy = lm[0] + sign * dx * ppc, lm[1] + dy * ppc
         steps.append({"placement": item["placement"], "asset": asset, "technique": tech,
                       "render_as": RENDER.get(tech, tech), "color": item.get("color", "auto"),
@@ -117,6 +119,35 @@ def plan(product, benchmark, view, ppc, landmarks, size="mid"):
         skipped += [f"{s['placement']}: 같은 상품에 로고 없이 슬로건 단독 → 제외" for s in steps]
         steps = []
     return steps, skipped
+
+
+def garment_fit(base_path, cx, cy, w_px, h_px, toward_x):
+    """로고 영역이 같은 원단 위에 있는지 검사. 중심부 원단 색과 크게 다른 픽셀(배경·손·이음선)이 많으면 침범.
+    침범 시 toward_x 방향(의상 안쪽)으로 최대 12단계 이동해 들어맞는 위치를 찾는다."""
+    im = np.asarray(Image.open(base_path).convert("RGB"), np.float32) / 255.0
+    H, W, _ = im.shape
+
+    def ratio(x, y):
+        x0, x1 = int(x - w_px / 2), int(x + w_px / 2)
+        y0, y1 = int(y - h_px / 2), int(y + h_px / 2)
+        if x0 < 0 or y0 < 0 or x1 > W or y1 > H:
+            return 1.0
+        reg = im[y0:y1, x0:x1]
+        core = im[int(y - h_px / 4):int(y + h_px / 4) + 1, int(x - w_px / 6):int(x + w_px / 6) + 1].reshape(-1, 3)
+        ref = np.median(core, axis=0)
+        diff = np.abs(reg - ref).max(axis=2)
+        return float((diff > 0.18).mean())
+
+    r0 = ratio(cx, cy)
+    if r0 <= 0.03:
+        return cx, r0, 0
+    step = max(2, w_px * 0.1)
+    for k in range(1, 13):
+        nx = cx + toward_x * step * k
+        r = ratio(nx, cy)
+        if r <= 0.03:
+            return nx, r, k
+    return cx, r0, -1
 
 
 def main():
@@ -157,6 +188,16 @@ def main():
     print("\n".join(md))
     if a.dry_run or not steps:
         return
+    for s in steps:                                                # 의상 영역 침범 검사 (합성 전)
+        hpx = max(4, round(s["width_px"] * LA.asset_alpha(s["asset"], 400).shape[0] / 400))
+        img_w = Image.open(a.base).width
+        toward = 1 if s["center_px"][0] < img_w / 2 else -1
+        nx, r, k = garment_fit(a.base, s["center_px"][0], s["center_px"][1], s["width_px"], hpx, toward)
+        if k > 0:
+            print(f"[보정] {s['placement']}: 의상 밖 침범 → 안쪽으로 {k}단계 이동 (침범 {r:.0%})")
+            s["center_px"][0] = round(nx)
+        elif k < 0:
+            print(f"[경고] {s['placement']}: 의상 영역 밖 침범 {r:.0%} — 자동 보정 실패, 위치·크기 수동 확인 필요")
     cur = a.base
     for s in steps:
         cur = LA.run(cur, s["asset"], s["center_px"], s["width_px"], s["render_as"], s["color"], str(out),
