@@ -1,0 +1,39 @@
+# 데모용 manifest — SS27 룩북 구조(p1,p2,p5)를 본뜬 예시 + 신규 클로징(p9)
+# 이미지는 합성 placeholder(실제 룩북 원본 아님). 실제 운영 시 Canva/Figma 내보내기 파일 경로로 교체.
+document:
+  title: HÖRU SS27 Lookbook (demo)
+  preset: web
+model_registry: [VM-A01, VM-B01]
+pages:
+  - id: p01
+    template: T01_model_reference
+    image: p01_model_reference.jpg
+    line: LINE_A
+    model_id: VM-A01
+    fonts: [Arial]
+    graphic_colors: ["#A89C89", "#1A1E36"]
+    text: "MODEL REFERENCE LINE A — LISTEN SS27 WEEKEND LISTENING VIRTUAL 178 CM"
+    fields: {look: "LINE A — LISTEN", season: SS27, concept: Weekend Listening, model: Virtual, height: 178 cm, size: Small, notes: "Relaxed fit"}
+  - id: p02
+    template: T02_line_hero
+    image: p02_line_hero.jpg
+    line: LINE_A
+    model_id: VM-A01
+    fonts: [Arial]
+    graphic_colors: ["#1A1E36"]
+    text: "LINE A — LISTEN · Everyday Basic"
+    fields: {line_name: "LINE A — LISTEN", line_concept: Everyday Basic}
+  - id: p05
+    template: T05_portrait_scene
+    image: p05_portrait_studio.jpg
+    line: LINE_A
+    model_id: VM-B02          # 미등록 ID → 일관성 실패 예시
+    text: "Born in Sweden"    # 국가명 → 컴플라이언스 실패 예시
+    fields: {}
+  - id: p09
+    template: T08_closing
+    image: p09_closing.jpg
+    fonts: [Cambria, Arial]
+    graphic_colors: ["#040000", "#C0392B"]   # 팔레트 외 레드 → 브랜드 실패 예시
+    text: '"HÖRU" is a registered trademark of i-Licensing  HÖRU® | A brand by i-Licensing'
+    fields: {c_copy_long: yes, c_copy_short: yes, contact: licensing@example.com}

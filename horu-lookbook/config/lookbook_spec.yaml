@@ -1,0 +1,75 @@
+# 룩북 페이지 템플릿 규격 — HÖRU SS27 Lookbook(Canva, 8p) 구조를 역설계해 표준화
+# 사용: 시트(브리프) 1행 = 1페이지. template 값으로 아래 규격을 불러와 생성·검수한다.
+templates:
+  T01_model_reference:
+    from_ss27: p1
+    aspect: "16:9"
+    slots: [front, side, back]
+    fields: [look, season, concept, model, height, size, notes]
+    rules: ["정면·측면·후면 동일 모델·동일 착장", "배경 무지 화이트", "VIRTUAL 표기"]
+  T02_line_hero:
+    from_ss27: p2
+    aspect: "16:9"
+    slots: [hero]
+    fields: [line_name, line_concept]          # 예: LINE A — LISTEN · Everyday Basic
+    rules: ["풀바디", "자연광 스튜디오", "하단 캡션 바"]
+  T03_scene_narrative:
+    from_ss27: p3
+    aspect: "16:9"
+    slots: [scene]
+    fields: [time, day]                        # 예: 07:40 SAT
+    rules: ["좌측 그라데이션 여백에 타이포", "랜드마크 금지", "북유럽 자연·도시 일반 풍경"]
+  T04_turnaround_detail:
+    from_ss27: p4
+    aspect: "16:9"
+    slots: [front, side, closeup]
+    fields: []
+    rules: ["클로즈업에 소재·로고 디테일 노출"]
+  T05_portrait_scene:
+    from_ss27: p5-p8
+    aspect: "4:5"
+    slots: [scene]
+    fields: [scene_tag]                        # studio / forest / cafe / park
+    rules: ["SNS·상세페이지 겸용", "모델 ID 고정"]
+  T06_product_mockup:        # 신규 — 잡화·라이프스타일 확장용
+    aspect: "1:1"
+    slots: [product]
+    fields: [sku, name, material, colorway, price_band]
+    rules: ["누끼 또는 플랫레이", "contain-fit (제품 잘림 금지)", "로고 위치 규정 준수"]
+  T07_lineup_grid:           # 신규 — 브랜드소개서 라인업 그리드와 호환
+    aspect: "16:9"
+    slots: [p1, p2, p3, p4, p5, p6]
+    fields: [category, line_name]
+    rules: ["2~6컷", "실사/승인 목업만"]
+  T08_closing:               # 신규 — C-COPY 필수
+    aspect: "16:9"
+    slots: [logo]
+    fields: [c_copy_long, c_copy_short, contact]
+    rules: ["C-COPY 장문·단문 모두 포함"]
+
+# 카테고리 확장 매트릭스 — 카테고리별로 어떤 템플릿 조합을 쓰는지
+categories:
+  fashion:
+    athleisure:    {templates: [T01, T02, T03, T04, T05, T07], model: true,  phase: 1}
+    young_casual:  {templates: [T01, T02, T05, T07],           model: true,  phase: 1}
+    golf:          {templates: [T01, T02, T03, T05, T07],      model: true,  phase: 2}
+    tennis:        {templates: [T01, T02, T05, T07],           model: true,  phase: 2}
+    swim:          {templates: [T02, T05, T07],                model: true,  phase: 3}
+    outdoor:       {templates: [T01, T02, T03, T05, T07],      model: true,  phase: 2}
+  fashion_goods:
+    bag:           {templates: [T06, T05, T07], model: optional, phase: 1}
+    cap_hat:       {templates: [T06, T05, T07], model: optional, phase: 1}
+    eyewear:       {templates: [T06, T05, T07], model: optional, phase: 2}
+    watch:         {templates: [T06, T07],      model: optional, phase: 3}
+    socks_gloves:  {templates: [T06, T07],      model: false,    phase: 2}
+  lifestyle:
+    camping:       {templates: [T03, T06, T07], model: optional, phase: 2}
+    home_bedding:  {templates: [T03, T06, T07], model: false,    phase: 3}
+    tumbler_kitchen: {templates: [T06, T07],    model: false,    phase: 1}
+    stationery:    {templates: [T06, T07],      model: false,    phase: 3}
+
+output_presets:
+  web_16x9:   {px: [3840, 2160]}
+  sns_4x5:    {px: [2160, 2700]}
+  square_1x1: {px: [2400, 2400]}
+  print_a4:   {px: [3508, 2480], dpi: 300}

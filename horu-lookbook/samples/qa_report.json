@@ -1,0 +1,279 @@
+{
+  "total": 86.5,
+  "pass": false,
+  "blockers": 1,
+  "detail": {
+    "brand": {
+      "score": 26.7,
+      "max": 30,
+      "checks": 9,
+      "fails": 1
+    },
+    "compliance": {
+      "score": 21.4,
+      "max": 25,
+      "checks": 7,
+      "fails": 1
+    },
+    "image_quality": {
+      "score": 23.4,
+      "max": 25,
+      "checks": 16,
+      "fails": 1
+    },
+    "consistency": {
+      "score": 7.5,
+      "max": 10,
+      "checks": 4,
+      "fails": 1
+    },
+    "info": {
+      "score": 7.5,
+      "max": 10,
+      "checks": 4,
+      "fails": 1
+    }
+  },
+  "results": [
+    {
+      "page": "p01",
+      "category": "brand",
+      "ok": true,
+      "message": "컬러 #A89C89 → 최근접 #A89C89 (ΔE 0.0, 허용 6)"
+    },
+    {
+      "page": "p01",
+      "category": "brand",
+      "ok": true,
+      "message": "컬러 #1A1E36 → 최근접 #1A1E36 (ΔE 0.0, 허용 6)"
+    },
+    {
+      "page": "p01",
+      "category": "brand",
+      "ok": true,
+      "message": "폰트 'Arial' 허용"
+    },
+    {
+      "page": "p01",
+      "category": "compliance",
+      "ok": true,
+      "message": "금지어 없음"
+    },
+    {
+      "page": "p01",
+      "category": "image_quality",
+      "ok": true,
+      "message": "해상도 3840x2160 (장변 최소 2000px)"
+    },
+    {
+      "page": "p01",
+      "category": "image_quality",
+      "ok": true,
+      "message": "비율 1.778 vs 규격 16:9(1.778)"
+    },
+    {
+      "page": "p01",
+      "category": "image_quality",
+      "ok": true,
+      "message": "하이라이트 클리핑 0.0% (상한 2%)"
+    },
+    {
+      "page": "p01",
+      "category": "image_quality",
+      "ok": true,
+      "message": "선명도 693 (최소 60, 낮으면 블러 의심)"
+    },
+    {
+      "page": "p01",
+      "category": "info",
+      "ok": true,
+      "message": "필수 필드 충족"
+    },
+    {
+      "page": "p02",
+      "category": "brand",
+      "ok": true,
+      "message": "컬러 #1A1E36 → 최근접 #1A1E36 (ΔE 0.0, 허용 6)"
+    },
+    {
+      "page": "p02",
+      "category": "brand",
+      "ok": true,
+      "message": "폰트 'Arial' 허용"
+    },
+    {
+      "page": "p02",
+      "category": "compliance",
+      "ok": true,
+      "message": "금지어 없음"
+    },
+    {
+      "page": "p02",
+      "category": "image_quality",
+      "ok": true,
+      "message": "해상도 3840x2160 (장변 최소 2000px)"
+    },
+    {
+      "page": "p02",
+      "category": "image_quality",
+      "ok": true,
+      "message": "비율 1.778 vs 규격 16:9(1.778)"
+    },
+    {
+      "page": "p02",
+      "category": "image_quality",
+      "ok": true,
+      "message": "하이라이트 클리핑 0.0% (상한 2%)"
+    },
+    {
+      "page": "p02",
+      "category": "image_quality",
+      "ok": true,
+      "message": "선명도 710 (최소 60, 낮으면 블러 의심)"
+    },
+    {
+      "page": "p02",
+      "category": "info",
+      "ok": true,
+      "message": "필수 필드 충족"
+    },
+    {
+      "page": "p05",
+      "category": "compliance",
+      "ok": false,
+      "message": "금지어/좌표 발견: Sweden"
+    },
+    {
+      "page": "p05",
+      "category": "image_quality",
+      "ok": false,
+      "message": "해상도 1080x1350 (장변 최소 2000px)"
+    },
+    {
+      "page": "p05",
+      "category": "image_quality",
+      "ok": true,
+      "message": "비율 0.800 vs 규격 4:5(0.800)"
+    },
+    {
+      "page": "p05",
+      "category": "image_quality",
+      "ok": true,
+      "message": "하이라이트 클리핑 0.0% (상한 2%)"
+    },
+    {
+      "page": "p05",
+      "category": "image_quality",
+      "ok": true,
+      "message": "선명도 1708 (최소 60, 낮으면 블러 의심)"
+    },
+    {
+      "page": "p05",
+      "category": "info",
+      "ok": false,
+      "message": "필수 필드 누락: scene_tag"
+    },
+    {
+      "page": "p09",
+      "category": "brand",
+      "ok": true,
+      "message": "컬러 #040000 → 최근접 #040000 (ΔE 0.0, 허용 6)"
+    },
+    {
+      "page": "p09",
+      "category": "brand",
+      "ok": false,
+      "message": "컬러 #C0392B → 최근접 #A89C89 (ΔE 62.1, 허용 6)"
+    },
+    {
+      "page": "p09",
+      "category": "brand",
+      "ok": true,
+      "message": "폰트 'Cambria' 허용"
+    },
+    {
+      "page": "p09",
+      "category": "brand",
+      "ok": true,
+      "message": "폰트 'Arial' 허용"
+    },
+    {
+      "page": "p09",
+      "category": "compliance",
+      "ok": true,
+      "message": "금지어 없음"
+    },
+    {
+      "page": "p09",
+      "category": "compliance",
+      "ok": true,
+      "message": "C-COPY(long) 포함"
+    },
+    {
+      "page": "p09",
+      "category": "compliance",
+      "ok": true,
+      "message": "C-COPY(short) 포함"
+    },
+    {
+      "page": "p09",
+      "category": "image_quality",
+      "ok": true,
+      "message": "해상도 3840x2160 (장변 최소 2000px)"
+    },
+    {
+      "page": "p09",
+      "category": "image_quality",
+      "ok": true,
+      "message": "비율 1.778 vs 규격 16:9(1.778)"
+    },
+    {
+      "page": "p09",
+      "category": "image_quality",
+      "ok": true,
+      "message": "하이라이트 클리핑 0.0% (상한 2%)"
+    },
+    {
+      "page": "p09",
+      "category": "image_quality",
+      "ok": true,
+      "message": "선명도 708 (최소 60, 낮으면 블러 의심)"
+    },
+    {
+      "page": "p09",
+      "category": "info",
+      "ok": true,
+      "message": "필수 필드 충족"
+    },
+    {
+      "page": "p01",
+      "category": "consistency",
+      "ok": true,
+      "message": "model_id 'VM-A01' 등록됨"
+    },
+    {
+      "page": "p02",
+      "category": "consistency",
+      "ok": true,
+      "message": "model_id 'VM-A01' 등록됨"
+    },
+    {
+      "page": "p05",
+      "category": "consistency",
+      "ok": false,
+      "message": "model_id 'VM-B02' 미등록/누락 — 얼굴 일관성 보장 불가"
+    },
+    {
+      "page": "LINE:LINE_A",
+      "category": "consistency",
+      "ok": true,
+      "message": "라인 내 모델 2명 (VM-A01, VM-B02) — 3명 이상이면 일관성 저하"
+    },
+    {
+      "page": "DOC",
+      "category": "compliance",
+      "ok": true,
+      "message": "클로징 페이지(T08_closing) 있음"
+    }
+  ]
+}
