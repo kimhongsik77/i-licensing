@@ -1,23 +1,29 @@
 {
-  "total": 85.7,
+  "total": 83.4,
   "pass": false,
-  "blockers": 1,
+  "blockers": 2,
   "detail": {
-    "brand": {
-      "score": 26.7,
+    "logo_realism": {
+      "score": 24.0,
       "max": 30,
+      "checks": 5,
+      "fails": 1
+    },
+    "brand": {
+      "score": 17.8,
+      "max": 20,
       "checks": 9,
       "fails": 1
     },
     "compliance": {
-      "score": 21.4,
-      "max": 25,
+      "score": 17.1,
+      "max": 20,
       "checks": 7,
       "fails": 1
     },
     "image_quality": {
-      "score": 23.4,
-      "max": 25,
+      "score": 14.1,
+      "max": 15,
       "checks": 16,
       "fails": 1
     },
@@ -28,8 +34,8 @@
       "fails": 2
     },
     "info": {
-      "score": 7.5,
-      "max": 10,
+      "score": 3.8,
+      "max": 5,
       "checks": 4,
       "fails": 1
     }
@@ -136,6 +142,36 @@
       "category": "info",
       "ok": true,
       "message": "필수 필드 충족"
+    },
+    {
+      "page": "p02",
+      "category": "logo_realism",
+      "ok": true,
+      "message": "shape_fidelity 5/5 (기준 4) — 로고 형태·비율·Ö 점·부엉이 눈이 원본과 동일한가 (깨짐·누락·왜곡 없음)"
+    },
+    {
+      "page": "p02",
+      "category": "logo_realism",
+      "ok": true,
+      "message": "lighting 4/5 (기준 4) — 로고 명암이 주변 원단/재질의 빛·그림자와 같은 방향·세기인가"
+    },
+    {
+      "page": "p02",
+      "category": "logo_realism",
+      "ok": true,
+      "message": "surface_follow 4/5 (기준 4) — 주름·곡면·원근을 따라 휘고 가려지는가 (스티커처럼 떠 보이지 않음)"
+    },
+    {
+      "page": "p02",
+      "category": "logo_realism",
+      "ok": false,
+      "message": "material 3/5 (기준 4) — 가공 방식 질감이 실물 같은가 (자수 실 결·볼륨 / 프린트 잉크 비침 / 각인 요철)"
+    },
+    {
+      "page": "p02",
+      "category": "logo_realism",
+      "ok": true,
+      "message": "scale_position 5/5 (기준 4) — 벤치마크 상품의 로고 위치·크기와 같은가, 이음선·지퍼에 걸치지 않는가"
     },
     {
       "page": "p05",

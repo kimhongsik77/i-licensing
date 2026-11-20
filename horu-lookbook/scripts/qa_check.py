@@ -183,6 +183,21 @@ def check_model_specs(registry, rules, rep):
                 f"{g} {h}cm/{w}kg (기준 {need['min_height_cm']}cm 이상·{need['max_weight_kg']}kg 이하)")
 
 
+def check_logo_review(page, rules, rep):
+    """로고 자연스러움 2차 검수 결과(1~5점) 확인 — 로고가 들어간 페이지는 필수, 항목당 4점 미만이면 블로커."""
+    q = rules.get("quality_first", {})
+    items = q.get("logo_review", {})
+    if not items or not page.get("has_logo"):
+        return
+    review = page.get("logo_review") or {}
+    need = q.get("pass_min_each", 4)
+    for key, desc in items.items():
+        v = review.get(key)
+        ok = isinstance(v, (int, float)) and v >= need
+        rep.add(page["id"], "logo_realism", ok,
+                f"{key} {v if v is not None else '미검수'}/5 (기준 {need}) — {desc}")
+
+
 def check_info(page, spec, rep):
     tpl = spec["templates"].get(page["template"])
     if tpl is None:
@@ -269,6 +284,7 @@ def main():
         check_compliance(p, rules, rep)
         check_image(p, rules, spec, base, preset, rep)
         check_info(p, spec, rep)
+        check_logo_review(p, rules, rep)
     check_consistency(pages, spec, registry, rep)
     check_model_specs(raw_registry, rules, rep)
     check_document(pages, rules, rep)

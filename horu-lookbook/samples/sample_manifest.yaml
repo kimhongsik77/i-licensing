@@ -24,6 +24,8 @@ pages:
     fonts: [Arial]
     graphic_colors: ["#1A1E36"]
     text: "LINE A — LISTEN · Everyday Basic"
+    has_logo: true
+    logo_review: {shape_fidelity: 5, lighting: 4, surface_follow: 4, material: 3, scale_position: 5}   # material 3 → 블로커 예시
     fields: {line_name: "LINE A — LISTEN", line_concept: Everyday Basic}
   - id: p05
     template: T05_portrait_scene

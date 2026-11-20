@@ -3,8 +3,8 @@ target_finished_cuts: 50        # 완성컷(QA 통과) 기준 일일 권장 목�
 target_mode: soft               # soft = 미달이어도 승인·진행 가능 (2026-11-20 사장님: '꼭 50컷이 안 돼도 됨')
 approval_time: "09:00 Asia/Seoul"  # 매일 승인 후 작업 시작 (전일 리포트 동봉)
 qa_yield_default: 0.70          # 원본컷 QA 통과율 초기 가정 — 실적 쌓이면 자동 대체
-max_derived_ratio: 0.60         # 완성컷 중 파생컷(컬러·포맷 변형) 최대 비중 — 다양성 확보
-derived_per_base: 4             # 통과한 원본 1컷당 최대 파생 수 (컬러 2 + 포맷 2)
+max_derived_ratio: 0.30         # 품질 우선(2026-11-20): 파생컷으로 수량 채우기 최소화
+derived_per_base: 2             # 통과한 원본 1컷당 최대 파생 수 (품질 우선으로 축소)
 
 # 컷 유형: ops = 소모하는 AI 작업 (없으면 크레딧 0)
 cut_types:
