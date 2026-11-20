@@ -1,0 +1,9 @@
+# 승인 대기 작업 목록 — 매일 09:00 브리프에 함께 보고, 승인된 항목만 크레딧 사용
+- id: BL-001
+  title: "모델 기준 시트 생성 (정면·측면·후면, 흰 배경, 무지 의상)"
+  added: 2026-11-20
+  scope: "P1 4명(VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01) × 3뷰 = 12컷 → 사장님 확인 후 P2·P3 8명(24컷)"
+  prompts: "python3 horu-lookbook/scripts/model_prompts.py sheet --id <모델ID>"
+  tool_need: image_gen
+  status: 승인 대기
+  done_when: "모델별 3뷰 얼굴·체형 일치 확인 → model_registry.yaml status를 approved로 변경"

@@ -16,6 +16,9 @@ HÖRU 룩북·목업 자동화 작업 폴더.
 | `config/logo_placement_library.yaml` | 업계 표준 위치·크기·기법 최소 규격·벤치마크 레시피 |
 | `config/slogan_rules.yaml` | 슬로건·텍스트로고 상황별 사용 규칙 |
 | `research/06_logo_placement_research.md` | 로고 적용 사례 조사 원본 (출처 포함) |
+| `config/model_registry.yaml` | 착장 가상모델 등록부 — 인종별 12명 (여 20세·남 23세, 체형 기준) |
+| `scripts/model_prompts.py` | 모델 기준 시트·착장 컷 생성 프롬프트 (무지 의상, 로고는 후합성) |
+| `daily/backlog.yaml` | 승인 대기 작업 목록 (매일 09:00 브리프에 보고) |
 
 실행:
 ```bash

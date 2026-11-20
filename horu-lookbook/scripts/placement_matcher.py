@@ -78,7 +78,10 @@ def plan(product, benchmark, view, ppc, landmarks, size="mid"):
         tech = item["technique"]
         rule = LIB["techniques"][tech]
         chosen, reasons = None, []
-        for asset in item["assets"]:
+        assets = list(item["assets"])
+        if LIB.get("symbol_standalone") == "avoid" and "symbol" in assets:   # 부엉이 단독은 항상 최후 후보
+            assets = [x for x in assets if x != "symbol"] + ["symbol"]
+        for asset in assets:
             stroke_r, text_r = asset_metrics(asset)
             wcm = width_cm
             if "max_height_cm" in p:                                   # 높이 제한 (캡 등)
@@ -98,6 +101,8 @@ def plan(product, benchmark, view, ppc, landmarks, size="mid"):
             skipped.append(f"{item['placement']}: 모든 에셋이 {tech} 최소 규격 미달 — " + "; ".join(reasons))
             continue
         asset, wcm, stroke_mm, text_mm = chosen
+        if asset == "symbol" and LIB.get("symbol_standalone") == "avoid":
+            reasons.append("⚠ 부엉이 심볼 단독 사용(예외) — 다른 로고가 모두 규격 미달. 사장님 확인 필요")
         dx, dy = p["offset_cm"]
         sign = 1 if view in ("front", "side") else -1               # 정면: 착용자 왼쪽 = 화면 오른쪽
         cx, cy = lm[0] + sign * dx * ppc, lm[1] + dy * ppc

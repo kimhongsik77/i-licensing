@@ -1,0 +1,79 @@
+# HÖRU 착장 가상모델 등록부 v1 (2026-11-20)
+# 기준 (사장님 지시 2026-11-20): 여성 20세·170cm 이상·50kg 이하 / 남성 23세·185cm 이상·74kg 이하 / 인종별 선정
+# 운영 규칙
+#   - 같은 모델 ID = 같은 얼굴. 첫 생성 시 기준 시트(T01: 정면·측면·후면, 흰 배경)를 만들고 이후 모든 컷의 참조로 사용
+#   - 의상은 '로고 없는 무지'로 생성 → HÖRU 로고는 placement_matcher.py로 후합성 (AI 로고 생성 금지)
+#   - 체형 묘사는 '건강한 슬림·탄탄한 체형' — 지나치게 마른 모습은 브랜드(액티브·자연) 이미지와 맞지 않아 네거티브 처리
+#   - 한 라인(룩) 안에서는 모델 최대 2명 (qa_check 일관성 규칙)
+# status: candidate = 기준 시트 생성·사장님 확인 전 / approved = 확정
+
+prompt_template:
+  base: >-
+    full-body fashion lookbook photograph of a {age}-year-old {ethnicity_en} {gender_en} model, height {height_cm} cm,
+    {build}, {hair}, {face}, {skin}, calm natural expression, {pose}, {view} view,
+    plain white seamless studio background, soft natural window light from the left, wearing {outfit} with no logos and no text,
+    photorealistic, high detail fabric texture, 4K, 3:4
+  negative: >-
+    logo, brand mark, text, letters, watermark, emblem, extra fingers, distorted hands, asymmetric eyes,
+    emaciated, underweight look, visible ribs, heavy makeup, tattoos, jewelry logos, landmark, country flag
+  views: [front, side, back]
+  default_outfit: "plain ivory crew-neck t-shirt and plain ivory wide-leg trousers, white plain sneakers"
+
+models:
+  # ---------- P1: 국내 주력 시장 ----------
+  VM-F-EA01: {status: candidate, priority: P1, gender: female, age: 20, height_cm: 172, weight_kg: 50,
+              ethnicity: "동아시아(한국)", ethnicity_en: "East Asian Korean",
+              build: "healthy slim toned build, long legs", hair: "straight black hair in a low bun", face: "oval face, soft double eyelids, natural brows",
+              skin: "light warm skin tone", markets: [KR, JP, CN], categories: [athleisure, young_casual, bag, tumbler],
+              note: "SS27 모델 B와 동일 계열 — 기존 컷과 톤 연결"}
+  VM-M-EA01: {status: candidate, priority: P1, gender: male, age: 23, height_cm: 186, weight_kg: 73,
+              ethnicity: "동아시아(한국)", ethnicity_en: "East Asian Korean",
+              build: "lean athletic build, broad shoulders", hair: "short black textured hair", face: "sharp jawline, monolid eyes",
+              skin: "light neutral skin tone", markets: [KR, JP, CN], categories: [athleisure, young_casual, cap, bag]}
+  VM-F-NE01: {status: candidate, priority: P1, gender: female, age: 20, height_cm: 174, weight_kg: 50,
+              ethnicity: "북유럽(스칸디나비아)", ethnicity_en: "Northern European Scandinavian",
+              build: "healthy slim toned build", hair: "long light brown hair, natural waves", face: "high cheekbones, light grey-blue eyes, light freckles",
+              skin: "fair cool skin tone", markets: [EU, GLOBAL, KR], categories: [athleisure, young_casual, cap],
+              note: "SS27 모델 A와 동일 계열 — 브랜드 노르딕 정체성 대표"}
+  VM-M-NE01: {status: candidate, priority: P1, gender: male, age: 23, height_cm: 188, weight_kg: 74,
+              ethnicity: "북유럽(스칸디나비아)", ethnicity_en: "Northern European Scandinavian",
+              build: "lean athletic build", hair: "short dark blond hair", face: "straight nose, light blue eyes, light stubble",
+              skin: "fair skin tone", markets: [EU, GLOBAL], categories: [athleisure, young_casual, bag, cap]}
+  # ---------- P2: 글로벌 다양성 ----------
+  VM-F-AF01: {status: candidate, priority: P2, gender: female, age: 20, height_cm: 175, weight_kg: 50,
+              ethnicity: "아프리카계", ethnicity_en: "Black African-descent",
+              build: "healthy slim toned build", hair: "short natural coily hair", face: "defined cheekbones, dark brown eyes",
+              skin: "deep brown skin tone", markets: [GLOBAL, US, EU], categories: [athleisure, young_casual]}
+  VM-M-AF01: {status: candidate, priority: P2, gender: male, age: 23, height_cm: 189, weight_kg: 74,
+              ethnicity: "아프리카계", ethnicity_en: "Black African-descent",
+              build: "lean athletic build", hair: "short cropped hair", face: "strong brow, dark brown eyes",
+              skin: "deep brown skin tone", markets: [GLOBAL, US, EU], categories: [athleisure, cap, bag]}
+  VM-F-SA01: {status: candidate, priority: P2, gender: female, age: 20, height_cm: 171, weight_kg: 49,
+              ethnicity: "남아시아", ethnicity_en: "South Asian",
+              build: "healthy slim toned build", hair: "long straight dark brown hair", face: "almond eyes, defined brows",
+              skin: "medium warm brown skin tone", markets: [GLOBAL, ASIA], categories: [young_casual, tumbler]}
+  VM-M-SA01: {status: candidate, priority: P2, gender: male, age: 23, height_cm: 185, weight_kg: 72,
+              ethnicity: "남아시아", ethnicity_en: "South Asian",
+              build: "lean athletic build", hair: "short wavy black hair", face: "dark eyes, neatly trimmed beard",
+              skin: "medium brown skin tone", markets: [GLOBAL, ASIA], categories: [athleisure, bag]}
+  # ---------- P3: 확장 시장 ----------
+  VM-F-SEA01: {status: candidate, priority: P3, gender: female, age: 20, height_cm: 170, weight_kg: 48,
+               ethnicity: "동남아시아", ethnicity_en: "Southeast Asian",
+               build: "healthy slim toned build", hair: "long straight black hair", face: "soft features, dark eyes",
+               skin: "light tan skin tone", markets: [SEA, KR], categories: [athleisure, tumbler]}
+  VM-M-SEA01: {status: candidate, priority: P3, gender: male, age: 23, height_cm: 185, weight_kg: 70,
+               ethnicity: "동남아시아", ethnicity_en: "Southeast Asian",
+               build: "lean athletic build", hair: "short black hair", face: "dark eyes, clean shaven",
+               skin: "tan skin tone", markets: [SEA], categories: [young_casual, cap]}
+  VM-F-LA01: {status: candidate, priority: P3, gender: female, age: 20, height_cm: 173, weight_kg: 50,
+              ethnicity: "라틴아메리카", ethnicity_en: "Latin American",
+              build: "healthy slim toned build", hair: "long dark brown wavy hair", face: "warm brown eyes, full brows",
+              skin: "olive skin tone", markets: [US, LATAM, GLOBAL], categories: [athleisure, young_casual]}
+  VM-M-LA01: {status: candidate, priority: P3, gender: male, age: 23, height_cm: 187, weight_kg: 74,
+              ethnicity: "라틴아메리카", ethnicity_en: "Latin American",
+              build: "lean athletic build", hair: "short dark wavy hair", face: "brown eyes, light stubble",
+              skin: "olive tan skin tone", markets: [US, LATAM, GLOBAL], categories: [athleisure, bag, cap]}
+
+legacy:   # SS27 기존 모델 — 신규 등록부로 대체 예정
+  VM-A01: {note: "SS27 p1~3, 서구계 여성, 178cm 표기 — 나이·몸무게 미기재 → 기준 확인 불가, VM-F-NE01로 대체 권장"}
+  VM-B01: {note: "SS27 p4~8, 동아시아 여성 — 나이·키·몸무게 미기재 → VM-F-EA01로 대체 권장"}

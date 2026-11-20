@@ -19,16 +19,17 @@ text_logo:                 # 워드마크(HÖRU 텍스트로고) 우선 상황
   - "심볼 단독으로 브랜드 인지가 어려운 첫 노출 상품 (가방 전면·허리밴드·측면)"
   - "가로로 긴 공간: 허리밴드, 스트랩, 캡 측면·뒷면, 사이드 옆선"
   - "라벨: 넥 라벨, 헴 플래그(폭 3cm 이상일 때)"
-symbol:                    # 부엉이 심볼 우선 상황
-  - "작은 공간·정사각 공간: 왼가슴 스몰로고, 캡 정면, 비니 패치, 텀블러 반대면 각인"
-  - "고급·미니멀 연출(로고 노출 최소화)"
+symbol:                    # 부엉이 심볼 — 되도록 단독 사용 금지 (사장님 지시 2026-11-20)
+  - "단독 사용 지양: 작은 공간도 조합 로고 축소 → 텍스트로고 순으로 먼저 검토"
+  - "예외: 모든 후보가 가공 최소 규격 미달일 때만 (매칭기가 사유 기록)"
+  - "패턴·장식 요소(Ö 모티프 등)는 스타일가이드 서브 BI 규정 따름"
 combined:                  # 메인 조합 로고 우선 상황
   - "공간 충분 + 브랜드 첫인상이 중요한 곳: 가방 전면 프린트, 텀블러 정면, 캡 정면(대형), 패키지"
 
 situations:                # 상황 → 슬로건 선택 (위에서부터 우선)
   lookbook_cover:      {slogan: MAIN,  with: "lockup:combined:MAIN:B", note: "룩북 표지·캠페인 히어로·포스터"}
   editorial_story:     {slogan: SUB_A, with: "lockup:wordmark:SUB_A:A", note: "브랜드 스토리 페이지·SNS·에디토리얼"}
-  campaign_call:       {slogan: SUB_B, with: "lockup:symbol:SUB_B:A", note: "캠페인 문구·행택·제품 태그"}
+  campaign_call:       {slogan: SUB_B, with: "lockup:combined:SUB_B:A", note: "캠페인 문구·행택·제품 태그"}
   active_apparel:      {slogan: MAIN,  placements: [back_neck, sleeve_vertical, waistband_back], note: "애슬레저·골프·테니스·아웃도어 — '액티브+자연'과 일치"}
   casual_apparel:      {slogan: SUB_A, placements: [inner_neck, back_neck], note: "영캐주얼·니트 — 안쪽·뒷목에 조용히"}
   bag:                 {slogan: MAIN,  placements: [strap_tape], note: "스트랩 우븐 테이프"}

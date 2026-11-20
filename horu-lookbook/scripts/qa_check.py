@@ -178,9 +178,12 @@ def check_model_specs(registry, rules, rep):
             continue
         h, w = m.get("height_cm"), m.get("weight_kg")
         need = spec[g]
+        age = m.get("age")
         ok = h is not None and w is not None and h >= need["min_height_cm"] and w <= need["max_weight_kg"]
+        if "age" in need:
+            ok = ok and age == need["age"]
         rep.add(f"MODEL:{mid}", "consistency", ok,
-                f"{g} {h}cm/{w}kg (기준 {need['min_height_cm']}cm 이상·{need['max_weight_kg']}kg 이하)")
+                f"{g} {age}세 {h}cm/{w}kg (기준 {need.get('age', '-')}세·{need['min_height_cm']}cm 이상·{need['max_weight_kg']}kg 이하)")
 
 
 def check_logo_review(page, rules, rep):
@@ -272,6 +275,13 @@ def main():
     doc = manifest.get("document", {})
     preset = doc.get("preset", "web")
     raw_registry = manifest.get("model_registry", []) or []
+    if manifest.get("model_registry_file"):                      # 등록부 파일 사용 (config/model_registry.yaml)
+        try:
+            reg_path = (base / manifest["model_registry_file"]).resolve()
+            raw_registry = (yaml.safe_load(reg_path.read_text(encoding="utf-8")) or {}).get("models", {})
+        except (OSError, yaml.YAMLError) as e:
+            print(f"[오류] 모델 등록부를 읽을 수 없습니다: {e}", file=sys.stderr)
+            return 2
     registry = set(raw_registry)  # list 또는 dict(id → 체형정보) 모두 지원
     pages = manifest.get("pages", [])
     if not pages:

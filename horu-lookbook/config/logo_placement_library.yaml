@@ -69,23 +69,27 @@ products:
       body_back:    {view: back, landmark: body_back, offset_cm: [0, 0], width_cm: [3.8, 4], techniques: [engrave], src: "Stanley 커스텀 각인: 브랜드 로고 반대면 1.5in (4imprint)"}
       body_vertical: {view: side, landmark: body_front, offset_cm: [0, 0], width_cm: [1.2, 2], length_cm: [8, 12], techniques: [print, engrave], src: "세로 측면 문구 관행 (판매처)"}
 
+# 심볼(부엉이 얼굴) 단독 정책 (사장님 지시 2026-11-20): 되도록 단독 사용 금지 → 조합 로고·텍스트로고 우선,
+#   심볼은 다른 후보가 모두 규격 미달일 때만 '예외'로 사용하고 계획서에 사유 기록 (매칭기가 자동 강제)
+symbol_standalone: avoid
+
 # ---------- 벤치마크별 적용 레시피 (benchmarks.yaml 선정 모델과 연결) ----------
 # 각 줄: placement, asset 후보(앞에서부터 규격 통과하는 것 사용), technique, color
 recipes:
   lululemon:        # 애슬레저 글로벌
-    top:    [{placement: left_chest_small, assets: [symbol], technique: reflective, color: auto},
+    top:    [{placement: left_chest_small, assets: [combined, wordmark, symbol], technique: reflective, color: auto},
              {placement: side_seam, assets: [wordmark], technique: reflective, color: auto},
              {placement: back_neck, assets: ["slogan:MAIN", wordmark], technique: print, color: auto}]
     bottom: [{placement: waistband_back, assets: [wordmark, symbol], technique: silicone, color: auto},
-             {placement: left_hip, assets: [symbol], technique: reflective, color: auto}]
+             {placement: left_hip, assets: [wordmark, combined, symbol], technique: reflective, color: auto}]
   안다르:
     bottom: [{placement: waistband_back, assets: [wordmark], technique: print, color: auto}]
-    top:    [{placement: left_chest_small, assets: [wordmark, symbol], technique: print, color: auto}]
+    top:    [{placement: left_chest_small, assets: [wordmark, combined, symbol], technique: print, color: auto}]
   Uniqlo:           # 영캐주얼 글로벌 — 겉 로고 최소, 라벨 중심
     top:    [{placement: inner_neck, assets: ["lockup:wordmark:SUB_A:B", wordmark], technique: print, color: auto},
              {placement: hem_flag, assets: [symbol, wordmark], technique: woven_label, color: "#FFFFFF", label_color: "#1A1E36"}]
   무신사 스탠다드:
-    top:    [{placement: left_chest_small, assets: [symbol, wordmark], technique: embroidery, color: tone},
+    top:    [{placement: left_chest_small, assets: [combined, wordmark, symbol], technique: embroidery, color: tone},
              {placement: back_neck, assets: [wordmark], technique: print, color: auto}]
   JanSport:
     bag:    [{placement: front_top_patch, assets: [wordmark, combined], technique: rubber_patch, color: "#FFFFFF", label_color: "#1A1E36"},
@@ -93,15 +97,15 @@ recipes:
   살로몬 Trailblazer:
     bag:    [{placement: front_print, assets: [combined, wordmark], technique: print, color: auto}]
   New Era:
-    cap:    [{placement: front_crown, assets: [symbol, combined], technique: embroidery, color: auto},
+    cap:    [{placement: front_crown, assets: [combined, wordmark, symbol], technique: embroidery, color: auto},
              {placement: side_flag, assets: [wordmark], technique: embroidery, color: auto},
              {placement: back_closure, assets: ["slogan:SUB_B", wordmark], technique: embroidery, color: auto}]
   이미스:
     cap:    [{placement: front_small, assets: [wordmark, symbol], technique: embroidery, color: tone}]
-    beanie: [{placement: cuff_patch, assets: [symbol], technique: leather_patch, color: auto, label_color: "#A89C89"}]
+    beanie: [{placement: cuff_patch, assets: [combined, wordmark, symbol], technique: leather_patch, color: auto, label_color: "#A89C89"}]
   Stanley:
-    tumbler: [{placement: body_front, assets: [combined, symbol], technique: print, color: auto},
-              {placement: body_back, assets: [symbol], technique: engrave, color: auto}]
+    tumbler: [{placement: body_front, assets: [combined, wordmark, symbol], technique: print, color: auto},
+              {placement: body_back, assets: [wordmark, combined, symbol], technique: engrave, color: auto}]
   써모스 코리아:
     tumbler: [{placement: body_front, assets: [wordmark, combined], technique: print, color: auto},
               {placement: body_vertical, assets: ["slogan:SUB_B"], technique: print, color: auto}]
