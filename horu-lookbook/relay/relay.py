@@ -75,7 +75,19 @@ def pick_tool(ladder, need, exclude):
     return cands[0] if cands else None
 
 
+def approval_gate():
+    """매일 09:00 작업 설계 승인 전에는 새 작업을 만들 수 없다 (daily/planner.py)."""
+    sys.path.insert(0, str(BASE.parent / "daily"))
+    try:
+        from planner import approved_today
+    except ImportError:
+        return
+    if not approved_today():
+        sys.exit("[잠김] 오늘 작업 설계가 아직 승인되지 않았습니다. 브리프 승인 후 작업을 시작하세요.")
+
+
 def cmd_new(a):
+    approval_gate()
     JOBS.mkdir(exist_ok=True)
     jid = f"J{len(list(JOBS.glob('J*.json'))) + 1:03d}"
     job = {"id": jid, "task": a.task, "need": a.need, "prompt": a.prompt, "refs": a.ref or [],

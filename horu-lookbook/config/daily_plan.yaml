@@ -1,0 +1,26 @@
+# 일일 작업 설계 기준 — v0.1 (2026-11-20, 사장님 지시)
+target_finished_cuts: 50        # 완성컷(QA 통과) 기준 일일 최소
+approval_time: "09:00 Asia/Seoul"  # 매일 승인 후 작업 시작 (전일 리포트 동봉)
+qa_yield_default: 0.70          # 원본컷 QA 통과율 초기 가정 — 실적 쌓이면 자동 대체
+max_derived_ratio: 0.60         # 완성컷 중 파생컷(컬러·포맷 변형) 최대 비중 — 다양성 확보
+derived_per_base: 4             # 통과한 원본 1컷당 최대 파생 수 (컬러 2 + 포맷 2)
+
+# 컷 유형: ops = 소모하는 AI 작업 (없으면 크레딧 0)
+cut_types:
+  model_fit:      {label: "착장컷(가상모델)", ops: {image_gen: 1}, share: 0.45}
+  scene:          {label: "씬·배경컷",        ops: {image_gen: 1}, share: 0.20}
+  product_ai:     {label: "상품컷(AI 누끼·배경)", ops: {bg_remove: 1}, share: 0.35}
+  local_composite: {label: "실사 상품+로고 합성(로컬)", ops: {}}   # 크레딧 0, 보유 실사 자산 수에 제한
+  derived:        {label: "파생컷(컬러·포맷 변형)", ops: {}}
+
+local_composite_daily_max: 10   # [확인 필요] HÖRU Product 폴더 실사 자산으로 하루 만들 수 있는 합성컷 수
+
+# 크레딧 정보가 '미확인'일 때 쓰는 보수적 가정 (출처·날짜 기록, 실측되면 tool_ladder 값이 우선)
+capacity_assumptions:
+  Canva:                 {per_period: 20, period_days: 30, daily_cap: null, cost: {image_gen: 1, bg_remove: 1},
+                          note: "무료 월 20~50회(자료 상충, 2026-11-20 검색) → 하한 20 적용"}
+  Adobe Express/Firefly: {per_period: 25, period_days: 30, daily_cap: null, cost: {image_gen: 1, bg_remove: 1},
+                          note: "무료 월 약 25 크레딧(제3자, 2026-11-20 검색)"}
+  Figma:                 {per_period: 500, period_days: 30, daily_cap: 150, cost: {image_gen: null, bg_remove: null},
+                          note: "월 500·일 150 크레딧(Figma 공식) — 이미지 1장당 소모량 미확인 → 실측 필요"}
+probe_ops_when_cost_unknown: 3  # 소모량 모를 때 하루 시험 사용 횟수 (실측용)
