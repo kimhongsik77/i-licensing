@@ -1,0 +1,78 @@
+﻿품목ID,대분류,카테고리,품목명,영문명,매칭기유형,단계,벤치마크(글로벌/국내),로고 기본 적용,슬로건 상황,촬영 방식,추천 모델,기존 실사 폴더,상태,비고
+FA-ATH-001,패션,Athleisure,레깅스,Leggings,bottom,Phase 1,lululemon / 안다르,허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",대기,
+FA-ATH-002,패션,Athleisure,조거 팬츠,Jogger Pants,bottom,Phase 1,lululemon / 안다르,허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",대기,
+FA-ATH-003,패션,Athleisure,스포츠 브라·크롭탑,Sports Bra / Crop Top,top,Phase 1,lululemon / 안다르,왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",대기,
+FA-ATH-004,패션,Athleisure,기능성 반팔 티,Performance Tee,top,Phase 1,lululemon / 안다르,왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",대기,
+FA-ATH-005,패션,Athleisure,하프집업 풀오버,Half-zip Pullover,top,Phase 1,lululemon / 안다르,왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",대기,
+FA-ATH-006,패션,Athleisure,바람막이 재킷,Windbreaker,top,Phase 1,lululemon / 안다르,왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",대기,SS27 p8 착장 존재
+FA-ATH-007,패션,Athleisure,트레이닝 쇼츠,Training Shorts,bottom,Phase 1,lululemon / 안다르,허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",대기,
+FA-YC-001,패션,Young Casual,오버핏 반팔 티,Oversized Tee,top,Phase 1,Uniqlo / 무신사 스탠다드,왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그,casual_apparel(SUB_A),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,SS27 p1~3 착장 존재
+FA-YC-002,패션,Young Casual,맨투맨,Sweatshirt,top,Phase 1,Uniqlo / 무신사 스탠다드,왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그,casual_apparel(SUB_A),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,SS27 p4~6 착장 존재
+FA-YC-003,패션,Young Casual,후디,Hoodie,top,Phase 1,Uniqlo / 무신사 스탠다드,왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그,casual_apparel(SUB_A),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+FA-YC-004,패션,Young Casual,니트 가디건,Knit Cardigan,top,Phase 1,Uniqlo / 무신사 스탠다드,왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그,casual_apparel(SUB_A),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,SS27 p7 착장 존재
+FA-YC-005,패션,Young Casual,커브드 치노 팬츠,Curved Chino Pants,bottom,Phase 1,Uniqlo / 무신사 스탠다드,뒤 허리 우븐 라벨 + 뒷주머니 소형 자수,casual_apparel(SUB_A),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,국내 트렌드(검색 3.4배)
+FA-YC-006,패션,Young Casual,와이드 팬츠,Wide Pants,bottom,Phase 1,Uniqlo / 무신사 스탠다드,뒤 허리 우븐 라벨 + 뒷주머니 소형 자수,casual_apparel(SUB_A),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,SS27 착장 존재
+FA-YC-007,패션,Young Casual,셔츠,Shirt,top,Phase 1,Uniqlo / 무신사 스탠다드,왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그,casual_apparel(SUB_A),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+FA-GLF-001,패션,Golf Wear,폴로 셔츠,Polo Shirt,top,Phase 2,미선정(공식평가 기준 선정 필요),왼가슴 자수 + 소매 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","golf, OLD/골프",대기,
+FA-GLF-002,패션,Golf Wear,골프 하프집업,Golf Half-zip,top,Phase 2,미선정(공식평가 기준 선정 필요),왼가슴 자수 + 소매 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","golf, OLD/골프",대기,
+FA-GLF-003,패션,Golf Wear,골프 팬츠,Golf Pants,bottom,Phase 2,미선정(공식평가 기준 선정 필요),뒤 허리 텍스트로고 + 왼쪽 엉덩이 소형 자수,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","golf, OLD/골프",대기,
+FA-GLF-004,패션,Golf Wear,플리츠 스커트,Pleated Skirt,bottom,Phase 2,미선정(공식평가 기준 선정 필요),뒤 허리 텍스트로고 + 왼쪽 엉덩이 소형 자수,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","golf, OLD/골프",대기,
+FA-GLF-005,패션,Golf Wear,니트 베스트,Knit Vest,top,Phase 2,미선정(공식평가 기준 선정 필요),왼가슴 자수 + 소매 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","golf, OLD/골프",대기,
+FA-TEN-001,패션,Tennis Wear,테니스 티·폴로,Tennis Tee / Polo,top,Phase 2,미선정,왼가슴 조합로고 자수 + 소매 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",OLD/테니스,대기,
+FA-TEN-002,패션,Tennis Wear,테니스 스커트,Tennis Skirt,bottom,Phase 2,미선정,허리 텍스트로고 프린트,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",OLD/테니스,대기,
+FA-TEN-003,패션,Tennis Wear,테니스 쇼츠,Tennis Shorts,bottom,Phase 2,미선정,허리 텍스트로고 프린트,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",OLD/테니스,대기,
+FA-TEN-004,패션,Tennis Wear,집업 재킷,Track Jacket,top,Phase 2,미선정,왼가슴 조합로고 자수 + 소매 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",OLD/테니스,대기,
+FA-OUT-001,패션,Outdoor,방수 쉘 재킷,Waterproof Shell,top,Phase 2,미선정,왼가슴 반사/실리콘 + 소매 세로 슬로건,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/outdoor, OLD/아웃도어",대기,
+FA-OUT-002,패션,Outdoor,경량 패딩,Light Down Jacket,top,Phase 2,미선정,왼가슴 반사/실리콘 + 소매 세로 슬로건,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/outdoor, OLD/아웃도어",대기,
+FA-OUT-003,패션,Outdoor,플리스 재킷,Fleece Jacket,top,Phase 2,미선정,왼가슴 반사/실리콘 + 소매 세로 슬로건,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/outdoor, OLD/아웃도어",대기,
+FA-OUT-004,패션,Outdoor,트레킹 팬츠,Trekking Pants,bottom,Phase 2,미선정,왼쪽 허벅지 반사 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/outdoor, OLD/아웃도어",대기,
+FA-CYC-001,패션,Cycling Wear,사이클 저지,Cycling Jersey,top,Phase 3,미선정,옆선 반사 텍스트로고 + 뒷목,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/cycle, OLD/사이클",대기,
+FA-CYC-002,패션,Cycling Wear,빕숏,Bib Shorts,bottom,Phase 3,미선정,허벅지 옆선 반사 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/cycle, OLD/사이클",대기,
+FA-SWM-001,패션,Swimwear,원피스 수영복,One-piece Swimsuit,top,Phase 3,미선정,허리·가슴 소형 실리콘 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,유형 근사(top) — 전용 배치 필요
+FA-SWM-002,패션,Swimwear,래시가드,Rash Guard,top,Phase 3,미선정,허리·가슴 소형 실리콘 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+FA-SWM-003,패션,Swimwear,보드쇼츠,Board Shorts,bottom,Phase 3,미선정,허리 소형 실리콘 텍스트로고,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+FA-FSH-001,패션,Fishing Wear,피싱 베스트,Fishing Vest,top,Phase 3,미선정,왼가슴 러버 패치,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+FA-FSH-002,패션,Fishing Wear,기능성 후디,UV Hoodie,top,Phase 3,미선정,왼가슴 러버 패치,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+FA-KID-001,패션,Kids (공식 17개 외 후보),키즈 맨투맨,Kids Sweatshirt,top,Phase 3,미선정,왼가슴 자수,casual_apparel(SUB_A),착장(키즈 모델 기준 없음),키즈 기준 미정,Fashion/KIDS,대기,키즈 모델 기준 결정 필요
+FA-KID-002,패션,Kids (공식 17개 외 후보),키즈 바람막이,Kids Windbreaker,top,Phase 3,미선정,왼가슴 자수,casual_apparel(SUB_A),착장(키즈 모델 기준 없음),키즈 기준 미정,Fashion/KIDS,대기,키즈 모델 기준 결정 필요
+AC-BAG-001,패션잡화,Bag,데이팩 백팩,Daypack,bag,Phase 1,JanSport / 살로몬 Trailblazer,전면 상단 패치 + 스트랩 우븐 테이프,bag(MAIN),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Bag, bag, OLD/여행용가방",대기,
+AC-BAG-002,패션잡화,Bag,슬링백,Sling Bag,bag,Phase 1,JanSport / 살로몬 Trailblazer,전면 상단 패치 + 스트랩 우븐 테이프,bag(MAIN),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Bag, bag, OLD/여행용가방",대기,
+AC-BAG-003,패션잡화,Bag,토트백,Tote Bag,bag,Phase 1,JanSport / 살로몬 Trailblazer,전면 상단 패치 + 스트랩 우븐 테이프,bag(MAIN),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Bag, bag, OLD/여행용가방",대기,
+AC-BAG-004,패션잡화,Bag,더플백,Duffel Bag,bag,Phase 1,JanSport / 살로몬 Trailblazer,전면 상단 패치 + 스트랩 우븐 테이프,bag(MAIN),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Bag, bag, OLD/여행용가방",대기,
+AC-BAG-005,패션잡화,Bag,여행용 캐리어,Luggage,goods,Phase 1,JanSport / 살로몬 Trailblazer,전면 상단 러버 패치 + 손잡이 텍스트로고,bag(MAIN),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Bag, bag, OLD/여행용가방",대기,전용 배치 필요
+AC-CAP-001,패션잡화,Hats & Caps,볼캡,Ball Cap,cap,Phase 1,New Era / 이미스,정면 조합로고 자수 + 측면 텍스트로고,cap(SUB_B),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+AC-CAP-002,패션잡화,Hats & Caps,러닝캡,Running Cap,cap,Phase 1,New Era / 이미스,정면 조합로고 자수 + 측면 텍스트로고,cap(SUB_B),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+AC-CAP-003,패션잡화,Hats & Caps,버킷햇,Bucket Hat,cap,Phase 1,New Era / 이미스,정면 조합로고 자수 + 측면 텍스트로고,cap(SUB_B),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,유형 근사(cap)
+AC-CAP-004,패션잡화,Hats & Caps,비니,Beanie,beanie,Phase 1,New Era / 이미스,커프 정면 가죽·우븐 패치 (조합로고),cap(SUB_B),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+AC-EYE-001,패션잡화,Sunglasses,스포츠 선글라스,Sport Sunglasses,goods,Phase 2,미선정,템플 각인 텍스트로고,campaign_call(SUB_B),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+AC-EYE-002,패션잡화,Sunglasses,라이프스타일 선글라스,Lifestyle Sunglasses,goods,Phase 2,미선정,템플 각인 텍스트로고,campaign_call(SUB_B),누끼+착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01",-,대기,
+AC-ACC-001,패션잡화,Accessories (Watch 등),스포츠 워치,Sport Watch,goods,Phase 3,미선정,다이얼·스트랩 각인,campaign_call(SUB_B),누끼,-,-,대기,
+AC-ACC-002,패션잡화,Accessories (Watch 등),워치 스트랩,Watch Strap,goods,Phase 3,미선정,다이얼·스트랩 각인,campaign_call(SUB_B),누끼,-,-,대기,
+AC-SGD-001,패션잡화,Sports Goods (장갑·양말·헬멧 등),스포츠 양말,Sport Socks,goods,Phase 2,미선정,발목 자카드 텍스트로고,active_apparel(MAIN),누끼,-,"OLD/사이클, golf",대기,
+AC-SGD-002,패션잡화,Sports Goods (장갑·양말·헬멧 등),골프 장갑,Golf Glove,goods,Phase 2,미선정,손등·발목 소형 텍스트로고,active_apparel(MAIN),누끼,-,"OLD/사이클, golf",대기,기존 AI 이미지 깨진 텍스트로 제외 이력
+AC-SGD-003,패션잡화,Sports Goods (장갑·양말·헬멧 등),사이클 헬멧,Cycling Helmet,goods,Phase 2,미선정,측면 반사 텍스트로고,active_apparel(MAIN),누끼,-,"OLD/사이클, golf",대기,
+AC-SGD-004,패션잡화,Sports Goods (장갑·양말·헬멧 등),사이클 장갑,Cycling Gloves,goods,Phase 2,미선정,손등·발목 소형 텍스트로고,active_apparel(MAIN),누끼,-,"OLD/사이클, golf",대기,
+AC-SGD-005,패션잡화,Sports Goods (장갑·양말·헬멧 등),골프백,Golf Bag,bag,Phase 2,미선정,전면 포켓 러버 패치 + 스트랩 텍스트로고,active_apparel(MAIN),누끼,-,"OLD/사이클, golf",대기,
+AC-SGD-006,패션잡화,Sports Goods (장갑·양말·헬멧 등),헤어밴드·손목밴드,Head/Wrist Band,goods,Phase 2,미선정,정면 실리콘 텍스트로고,active_apparel(MAIN),누끼,-,"OLD/사이클, golf",대기,
+LS-KIT-001,라이프스타일,Kitchenware (드링크웨어 포함),텀블러,Tumbler,tumbler,Phase 1,Stanley / 써모스 코리아,몸통 정면 조합로고 + 반대면 각인,drinkware(SUB_B),누끼+연출,-,-,대기,
+LS-KIT-002,라이프스타일,Kitchenware (드링크웨어 포함),보틀,Water Bottle,tumbler,Phase 1,Stanley / 써모스 코리아,몸통 정면 조합로고 + 반대면 각인,drinkware(SUB_B),누끼+연출,-,-,대기,
+LS-KIT-003,라이프스타일,Kitchenware (드링크웨어 포함),머그,Mug,tumbler,Phase 1,Stanley / 써모스 코리아,몸통 정면 조합로고 + 반대면 각인,drinkware(SUB_B),누끼+연출,-,-,대기,유형 근사(tumbler)
+LS-KIT-004,라이프스타일,Kitchenware (드링크웨어 포함),식기 세트,Tableware Set,goods,Phase 1,미선정,접시 뒷면 형압·하단 각인,drinkware(SUB_B),누끼+연출,-,-,대기,
+LS-KIT-005,라이프스타일,Kitchenware (드링크웨어 포함),보관용기,Storage Container,goods,Phase 1,미선정,뚜껑 형압 + 측면 소형 프린트,drinkware(SUB_B),누끼+연출,-,-,대기,
+LS-CMP-001,라이프스타일,Camping & Leisure,캠핑 체어,Camping Chair,goods,Phase 2,미선정,원단 라벨·본체 프린트,drinkware(SUB_B),연출,-,Fashion/camping,대기,
+LS-CMP-002,라이프스타일,Camping & Leisure,텐트·타프,Tent / Tarp,goods,Phase 2,미선정,원단 라벨·본체 프린트,drinkware(SUB_B),연출,-,Fashion/camping,대기,
+LS-CMP-003,라이프스타일,Camping & Leisure,랜턴,Lantern,goods,Phase 2,미선정,원단 라벨·본체 프린트,drinkware(SUB_B),연출,-,Fashion/camping,대기,
+LS-CMP-004,라이프스타일,Camping & Leisure,캠핑 쿡웨어,Camping Cookware,goods,Phase 2,미선정,원단 라벨·본체 프린트,drinkware(SUB_B),연출,-,Fashion/camping,대기,기존 '주방' 이미지 경쟁사 문구 제외 이력
+LS-HOM-001,라이프스타일,Home & Bedding,침구 세트,Bedding Set,goods,Phase 3,미선정,모서리 우븐 라벨,editorial_story(SUB_A),연출,-,-,대기,기존 침구매장 이미지 문구 크롭 이력
+LS-HOM-002,라이프스타일,Home & Bedding,블랭킷,Throw Blanket,goods,Phase 3,미선정,모서리 우븐 라벨,editorial_story(SUB_A),연출,-,-,대기,
+LS-HOM-003,라이프스타일,Home & Bedding,쿠션,Cushion,goods,Phase 3,미선정,모서리 우븐 라벨,editorial_story(SUB_A),연출,-,-,대기,
+LS-DSK-001,라이프스타일,Desk Items,데스크 매트·오거나이저,Desk Mat & Organizer,goods,Phase 3,미선정,정면 각인·형압,editorial_story(SUB_A),누끼+연출,-,-,대기,소개서 제안 라인업
+LS-DSK-002,라이프스타일,Desk Items,원목 데스크 트레이,Wood Desk Tray,goods,Phase 3,미선정,정면 각인·형압,editorial_story(SUB_A),누끼+연출,-,-,대기,소개서 제안 라인업
+LS-DSK-003,라이프스타일,Desk Items,다이어리·문구 세트,Diary & Stationery,goods,Phase 3,미선정,정면 각인·형압,editorial_story(SUB_A),누끼+연출,-,-,대기,소개서 제안 라인업
+LS-DSK-004,라이프스타일,Desk Items,노트북 스탠드,Laptop Stand,goods,Phase 3,미선정,정면 각인·형압,editorial_story(SUB_A),누끼+연출,-,-,대기,소개서 제안 라인업
+LS-DSK-005,라이프스타일,Desk Items,리필 스틸 텀블러,Refill Steel Tumbler,tumbler,Phase 3,미선정,정면 각인·형압,editorial_story(SUB_A),누끼+연출,-,-,대기,소개서 제안 라인업
+LS-DEC-001,라이프스타일,Small Furniture & Decor,무드등·캔들,Mood Lamp & Candle,goods,Phase 3,미선정,하단 각인·라벨,editorial_story(SUB_A),연출,-,-,대기,소개서 제안 라인업
+LS-DEC-002,라이프스타일,Small Furniture & Decor,오브제 트레이,Object Tray,goods,Phase 3,미선정,하단 각인·라벨,editorial_story(SUB_A),연출,-,-,대기,소개서 제안 라인업
+LS-DEC-003,라이프스타일,Small Furniture & Decor,미니 플랜터,Mini Planter,goods,Phase 3,미선정,하단 각인·라벨,editorial_story(SUB_A),연출,-,-,대기,소개서 제안 라인업
+LS-DEC-004,라이프스타일,Small Furniture & Decor,리넨 쿠션·블랭킷,Linen Cushion & Throw,goods,Phase 3,미선정,하단 각인·라벨,editorial_story(SUB_A),연출,-,-,대기,소개서 제안 라인업
+LS-DEC-005,라이프스타일,Small Furniture & Decor,사이드 테이블,Side Table,goods,Phase 3,미선정,하단 각인·라벨,editorial_story(SUB_A),연출,-,-,대기,소개서 제안 라인업

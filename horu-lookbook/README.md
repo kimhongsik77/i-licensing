@@ -19,6 +19,7 @@ HÖRU 룩북·목업 자동화 작업 폴더.
 | `config/model_registry.yaml` | 착장 가상모델 등록부 — 인종별 12명 (여 20세·남 23세, 체형 기준) |
 | `scripts/model_prompts.py` | 모델 기준 시트·착장 컷 생성 프롬프트 (무지 의상, 로고는 후합성) |
 | `daily/backlog.yaml` | 승인 대기 작업 목록 (매일 09:00 브리프에 보고) |
+| `catalog/product_master.yaml/.csv` | 작업 품목 마스터 77품목 (공식 17개 카테고리 → 패션/패션잡화/라이프스타일) — 수정은 `catalog/build_catalog.py` |
 
 실행:
 ```bash
