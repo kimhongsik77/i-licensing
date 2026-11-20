@@ -94,8 +94,10 @@ def check_compliance(page, rules, rep):
     pid = page["id"]
     text = page.get("text", "") or ""
     comp = rules["compliance"]
+    def term_re(t):  # 영문 금지어는 단어 경계로 검사 (예: EMIS가 premise에 오탐되지 않게)
+        return rf"\b{re.escape(t)}\b" if t.isascii() else re.escape(t)
     hits = [t for t in comp["forbidden_terms"] + comp.get("competitor_terms", [])
-            if re.search(re.escape(t), text, re.IGNORECASE)]
+            if re.search(term_re(t), text, re.IGNORECASE)]
     hits += [m.group(0) for p in comp["forbidden_patterns"] for m in re.finditer(p, text)]
     rep.add(pid, "compliance", not hits,
             "금지어 없음" if not hits else f"금지어/좌표 발견: {', '.join(hits)}")

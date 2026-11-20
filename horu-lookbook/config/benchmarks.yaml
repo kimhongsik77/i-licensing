@@ -1,30 +1,60 @@
-# 벤치마크 모델 & 촬영 레시피 (shot_recipes) — 리서치 기준일 2026-11-20
-# 레시피는 '구성 문법'만 기록. 경쟁사 로고·문구·이미지 사용 금지.
-# relay 작업 카드 prompt에 recipe를 붙여 생성 → qa_check + 갭 점수로 평가
+# 벤치마크 모델 & 적용 규칙 — v0.2 (2026-11-20)
+# [선정 원칙 — 사장님 지시 2026-11-20]
+#   1) 판매량·브랜드 선호도 등 '공식 평가' 기준으로 선정 (매출 공시 > 공식 랭킹 > 공식 시상 > 제3자 추정)
+#   2) HÖRU 로고(텍스트로고·슬로건·전체로고·심볼)는 자유 연출하되, 적용 위치·크기·기법은
+#      벤치마크 상품이 자사 로고를 적용하는 방식에 준한다
+#   3) 로고 외 상품 디자인·텍스트는 HÖRU를 고려해 자유 구현 (전체 완성도 우선)
+# 변경 이력: v0.1(무드 적합성 기준) → v0.2(공식 평가 기준). 무드 기준 브랜드는 mood_refs로 강등
 status: draft   # 사장님 확인 후 confirmed
+
+evidence_grade:   # 근거 등급
+  A: 기업 공시·실적 발표 (공식 매출)
+  B: 플랫폼 공식 랭킹 (무신사 등) / 공식 브랜드 대상
+  C: 제3자 추정·업계 보도
+
 categories:
   athleisure:
-    models: {global: Vuori, korea: [부디무드라, 룰루레몬 코리아], sub: [Aim'n]}
-    shot_recipes:
-      - "trail-to-town: 해안·숲길 아침 자연광 → 같은 착장으로 도심 카페, 2컷 쌍"
-      - "실제 같은 30~40대 캐스팅, 정적 포즈(스트레칭·걷기), 바랜 샌드·세이지·네이비"
+    global: {brand: lululemon, evidence: "FY2025 매출 $11.1B(+5%), 카테고리 매출 1위", grade: A,
+             source: "BusinessWire 2026-03-17"}
+    korea:  {brand: 안다르, evidence: "2025 매출 약 3,000억(+약 27%), 국내 애슬레저 1위", grade: C,
+             source: "비즈워치 2026-03-17 (원문 대조 필요)"}
+    logo_application:   # 벤치마크 방식 → HÖRU 적용 (관찰 기반 추정, 실물 수집 때 확정)
+      - {bench: "lululemon: 좌가슴·허리 뒤 소형 심볼 반사/실리콘 프린트", horu: "부엉이 심볼 소형 반사 프린트 — 좌가슴, 허리밴드 뒤"}
+      - {bench: "안다르: 허리밴드 워드마크 프린트", horu: "HÖRU 텍스트로고 허리밴드 톤온톤 프린트, 슬로건은 밴드 안쪽"}
+    mood_refs: [Vuori, Aim'n]
   young_casual:
-    models: {global: Norse Projects, korea: 산산기어, sub: [무신사 스탠다드(상품구성), 디미트리블랙(커브드 실루엣)]}
-    shot_recipes:
-      - "북유럽 자연 로케이션 + 미니멀 건축 배경 교차, 자연광, 네이비·딥그린·샌드"
-      - "기능 소재 디테일 클로즈업 1컷 / 전신 실루엣 컷 2컷 (커브드·와이드 팬츠)"
+    global: {brand: Uniqlo, evidence: "Fast Retailing FY2026 매출 3조 9,633억엔(사상 최대)", grade: A,
+             source: "nippon.com 2026-10"}
+    korea:  {brand: 무신사 스탠다드, evidence: "2025 매출 약 4,700억(+40%)", grade: C,
+             source: "아시아경제 2026-03-11"}
+    logo_application:
+      - {bench: "Uniqlo: 겉면 무로고, 넥라벨·행택·패키지에 로고", horu: "넥라벨 전체로고, 행택 슬로건, 밑단 소형 텍스트로고 탭"}
+      - {bench: "무신사 스탠다드: 넥라벨·소형 탭", horu: "사이드 시접 탭에 텍스트로고"}
+    mood_refs: [Norse Projects, 산산기어]
   bag:
-    models: {global: Sandqvist, korea: 살로몬 Trailblazer 상세페이지, sub: [Db(올블랙 히어로)]}
-    shot_recipes:
-      - "무배경 정면·3/4·측면 패스샷 + 용량 비교 1컷 + 등판·하네스 디테일"
-      - "숲·호수 착용컷, 부엉이 심볼 톤온톤 소형 패치"
+    global: {brand: JanSport, evidence: "VF Corp Packs 부문 성장 브랜드(브랜드별 공식 판매순위 미확보 — 잠정)", grade: C,
+             source: "VF FY2026 실적 분석 / 무신사 2026-02 랭킹 1위(슈브레이크)"}
+    korea:  {brand: 살로몬 Trailblazer, evidence: "무신사 가방 랭킹 2026-02·2026-08 연속 2위", grade: B,
+             source: "무신사 콘텐츠 2026-02 / 2026-08"}
+    logo_application:
+      - {bench: "JanSport: 전면 포켓 하단 패치 로고", horu: "전면 포켓 하단 텍스트로고 가죽/러버 패치"}
+      - {bench: "Trailblazer: 전면 상단 워드마크 프린트 + 숄더 스트랩 로고", horu: "전면 상단 전체로고 프린트, 숄더 스트랩 슬로건"}
+    mood_refs: [Sandqvist, Db]
   cap:
-    models: {global: Satisfy PeaceShell, korea: 이미스, sub: [Norse Projects]}
-    shot_recipes:
-      - "정면·3/4·후면 3컷 표준 + 접힌 상태 디테일, 컬러칩 3~5색 그리드"
-      - "정면 소형 톤온톤 자수(크기는 샘플 확인 후 확정), 트레일 러닝 착용"
+    global: {brand: New Era, evidence: "연매출 $2B 이상(애널리스트 인용), 무신사 2025-09 주간 모자 1위", grade: C,
+             source: "SGB / Front Office Sports 2026-10"}
+    korea:  {brand: 이미스, evidence: "2024 매출 863억, 2026 연매출 1,000억 안팎", grade: C,
+             source: "이투데이 2025-08-13 / 전자신문 2026-11-12"}
+    logo_application:
+      - {bench: "New Era: 크라운 정면 대형 자수 + 좌측면 플래그 로고 + 챙 스티커", horu: "정면 부엉이 심볼 또는 전체로고 대형 자수, 측면 텍스트로고, 챙 스티커에 슬로건"}
+      - {bench: "이미스: 정면 레터링 소~중형 자수", horu: "정면 HÖRU 텍스트로고 자수, 후면 스트랩 위 슬로건"}
+    mood_refs: [Satisfy, Norse Projects]
   tumbler:
-    models: {global: KINTO Day Off, korea: 락앤락 블리쏘울, sub: [Stelton(컬러 그리드)]}
-    shot_recipes:
-      - "카페 테이블 자연광 + 넓은 여백, 로고 작은 각인"
-      - "5색 컬러 그리드(블랙·네이비·딥그린·샌드·화이트) + 용량별 200/400/700ml 라인업"
+    global: {brand: Stanley, evidence: "미국 점유율 약 30%(Consumer Edge 추정), 2023 매출 약 $750M — 비상장으로 공식 매출 없음", grade: C,
+             source: "modernretail.co / fastcompany 2026-03"}
+    korea:  {brand: 써모스 코리아, evidence: "퍼스트브랜드 대상 7년 연속(2025)", grade: B,
+             source: "스페셜타임즈 2026-10"}
+    logo_application:
+      - {bench: "Stanley: 몸체 전면 하단 로고 각인/프린트", horu: "몸체 전면 하단 전체로고 레이저 각인"}
+      - {bench: "써모스: 몸체 워드마크 프린트, 뚜껑 무로고", horu: "몸체 텍스트로고 프린트 + 반대면 슬로건 세로 배치"}
+    mood_refs: [KINTO, Stelton]
