@@ -87,10 +87,10 @@ def tool_budgets(cfg, ladder, today: date):
         c = t.get("credit", {})
         remaining = c.get("remaining")
         src = "실측" if remaining is not None else "추정"
-        per_period = a.get("per_period")
+        per_period = c.get("per_period", a.get("per_period"))   # 새로 추가한 툴은 tool_ladder 값 사용
         if remaining is None:
             remaining = per_period
-        days_left = c.get("days_until_reset") or a.get("period_days") or 30
+        days_left = c.get("days_until_reset") or c.get("period_days") or a.get("period_days") or 30
         cap = c.get("daily_cap", a.get("daily_cap"))
         if remaining is None:
             budget = 0
@@ -170,10 +170,11 @@ def options_for_shortfall(plan, cfg):
         return []
     need_base = math.ceil(s / (cfg["derived_per_base"] + 1) / plan["yield"])
     return [
-        f"① 실사 자산 합성 상한 확대 (현재 {cfg['local_composite_daily_max']}컷/일) — 크레딧 0, Product 폴더 자산 수 확인 필요",
-        f"② 유료 플랜 1개 추가 — 원본 약 {need_base}컷/일 추가 확보 시 부족분 해소 (추정)",
-        "③ 사장님 PC에서 로컬 이미지 생성(무료·무제한, GPU 필요) 툴 추가",
-        f"④ 파생컷 비중 상한 상향 (현재 {int(cfg['max_derived_ratio']*100)}%) — 컷 수는 늘지만 다양성 저하",
+        "① 무료 디자인 AI 툴 추가 (사장님 계획) — `python3 horu-lookbook/relay/relay.py add-tool ...` 한 줄로 등록, 다음 브리프부터 자동 배치",
+        f"② 실사 자산 합성 상한 확대 (현재 {cfg['local_composite_daily_max']}컷/일) — 크레딧 0, Product 폴더 자산 수 확인 필요",
+        f"③ 유료 플랜 1개 추가 — 원본 약 {need_base}컷/일 추가 확보 시 부족분 해소 (추정)",
+        "④ 사장님 PC에서 로컬 이미지 생성(무료·무제한, GPU 필요) 툴 추가",
+        f"⑤ 파생컷 비중 상한 상향 (현재 {int(cfg['max_derived_ratio']*100)}%) — 컷 수는 늘지만 다양성 저하",
     ]
 
 
@@ -181,7 +182,8 @@ def write_brief(plan, rep, cfg):
     t = plan["totals"]
     L = [f"# HÖRU 일일 작업 브리프 — {plan['date']}", "",
          f"**승인 요청:** 오늘 완성컷 계획 **{t['finished_planned']}컷** (목표 {t['target']}컷"
-         + (f", **부족 {t['shortfall']}컷**" if t["shortfall"] else ", 달성 가능") + ")", "",
+         + (f", 부족 {t['shortfall']}컷 — 권장 목표라 승인·진행 가능" if t["shortfall"] and cfg.get("target_mode") == "soft"
+            else f", **부족 {t['shortfall']}컷**" if t["shortfall"] else ", 달성 가능") + ")", "",
          "## 1. 전일 결과 리포트", ""]
     if rep["has_data"]:
         L += [f"| 항목 | 값 |", "|---|---|",
@@ -208,7 +210,7 @@ def write_brief(plan, rep, cfg):
         L += ["", "## 5. 실측 필요", ""] + [f"- {p['tool']} {p['op']} {p['count']}회 시험 사용 → 1장당 크레딧 소모량 기록" for p in plan["probes"]]
     opts = options_for_shortfall(plan, cfg)
     if opts:
-        L += ["", "## 6. 부족분 해소 선택지 (사장님 결정)", ""] + [f"- {o}" for o in opts]
+        L += ["", "## 6. 작업량 확대 선택지 (참고)", ""] + [f"- {o}" for o in opts]
     L += ["", "---", "승인: `python3 horu-lookbook/daily/planner.py approve --date " + plan["date"] + "` (또는 채팅으로 \"승인\")"]
     BRIEFS.mkdir(parents=True, exist_ok=True)
     out = BRIEFS / f"{plan['date']}.md"

@@ -12,6 +12,7 @@
   progress --job J001 --note "2/4장 완료" [--output 파일]          # 중간 결과 기록
   done  --job J001 --qa pass|fail      # 완료 + 품질검사 결과 기록 (단계 상향 판단에 사용)
   refill --tool Canva --remaining 50   # 크레딧 충전/초기화 반영 (다음 달 등)
+  add-tool --name "툴이름" --capabilities image_gen bg_remove --per-period 100 --period-days 30 [--daily-cap 20] [--cost-image-gen 1]
   status [--job J001]                  # 현황 보기
 """
 from __future__ import annotations
@@ -213,6 +214,32 @@ def cmd_refill(a):
     print(f"[충전] {a.tool} 남은 크레딧 = {a.remaining} → 다시 순서에 복귀")
 
 
+def cmd_add_tool(a):
+    """무료 디자인 AI 툴을 순서표 맨 뒤에 추가 — 다음 브리프부터 크레딧 페이스에 맞춰 자동 배치."""
+    ladder = load_yaml(LADDER)
+    if any(t["name"] == a.name for t in ladder["tools"]):
+        sys.exit(f"[오류] '{a.name}'은(는) 이미 등록돼 있습니다.")
+    valid = {"image_gen", "bg_remove", "expand", "layout", "mockup"}
+    bad = set(a.capabilities) - valid
+    if bad:
+        sys.exit(f"[오류] 알 수 없는 역할: {', '.join(bad)} (가능: {', '.join(sorted(valid))})")
+    order = max(t["order"] for t in ladder["tools"]) + 1
+    cost = {}
+    if a.cost_image_gen is not None:
+        cost["image_gen"] = a.cost_image_gen
+    if a.cost_bg_remove is not None:
+        cost["bg_remove"] = a.cost_bg_remove
+    ladder["tools"].append({
+        "name": a.name, "order": order, "enabled": True, "capabilities": a.capabilities,
+        "credit": {"remaining": None, "per_period": a.per_period, "period_days": a.period_days,
+                   "daily_cap": a.daily_cap, "cost": cost or None,
+                   "unit": "확인 필요", "reset": f"{a.period_days}일 주기",
+                   "added": now(), "note": a.note or ""}})
+    save_yaml(LADDER, ladder)
+    print(f"[추가] {order}번 주자 {a.name} — 주기당 {a.per_period} / {a.period_days}일"
+          + ("" if cost else " (1장당 소모량 미입력 → 첫날 3회 실측)"))
+
+
 def cmd_status(a):
     ladder = load_yaml(LADDER)
     print(f"현재 단계: Lv.{ladder['level']} ({LEVEL_TEXT[ladder['level']]}) | 설정 상태: {ladder['status']}")
@@ -235,10 +262,15 @@ def main():
     p = sp.add_parser("progress"); p.add_argument("--job", required=True); p.add_argument("--note", required=True); p.add_argument("--output")
     p = sp.add_parser("done"); p.add_argument("--job", required=True); p.add_argument("--qa", choices=["pass", "fail"], required=True)
     p = sp.add_parser("refill"); p.add_argument("--tool", required=True); p.add_argument("--remaining", type=int, required=True)
+    p = sp.add_parser("add-tool"); p.add_argument("--name", required=True)
+    p.add_argument("--capabilities", nargs="+", required=True)
+    p.add_argument("--per-period", type=int, required=True); p.add_argument("--period-days", type=int, default=30)
+    p.add_argument("--daily-cap", type=int); p.add_argument("--cost-image-gen", type=int)
+    p.add_argument("--cost-bg-remove", type=int); p.add_argument("--note")
     p = sp.add_parser("status"); p.add_argument("--job")
     a = ap.parse_args()
     {"new": cmd_new, "next": cmd_next, "credit-out": cmd_credit_out, "progress": cmd_progress,
-     "done": cmd_done, "refill": cmd_refill, "status": cmd_status}[a.cmd](a)
+     "done": cmd_done, "refill": cmd_refill, "add-tool": cmd_add_tool, "status": cmd_status}[a.cmd](a)
 
 
 if __name__ == "__main__":

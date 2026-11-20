@@ -1,5 +1,6 @@
 # 일일 작업 설계 기준 — v0.1 (2026-11-20, 사장님 지시)
-target_finished_cuts: 50        # 완성컷(QA 통과) 기준 일일 최소
+target_finished_cuts: 50        # 완성컷(QA 통과) 기준 일일 권장 목표
+target_mode: soft               # soft = 미달이어도 승인·진행 가능 (2026-11-20 사장님: '꼭 50컷이 안 돼도 됨')
 approval_time: "09:00 Asia/Seoul"  # 매일 승인 후 작업 시작 (전일 리포트 동봉)
 qa_yield_default: 0.70          # 원본컷 QA 통과율 초기 가정 — 실적 쌓이면 자동 대체
 max_derived_ratio: 0.60         # 완성컷 중 파생컷(컬러·포맷 변형) 최대 비중 — 다양성 확보
