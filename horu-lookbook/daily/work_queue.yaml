@@ -1,0 +1,772 @@
+note: 자동 생성 — 수정은 catalog/build_catalog.py 또는 model_registry.yaml에서
+shots:
+- shot_id: AC-BAG-001-S1
+  품목ID: AC-BAG-001
+  품목명: 데이팩 백팩
+  카테고리: Bag
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 준비완료
+- shot_id: AC-BAG-001-S2
+  품목ID: AC-BAG-001
+  품목명: 데이팩 백팩
+  카테고리: Bag
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 준비완료
+- shot_id: AC-BAG-002-S1
+  품목ID: AC-BAG-002
+  품목명: 슬링백
+  카테고리: Bag
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 준비완료
+- shot_id: AC-BAG-002-S2
+  품목ID: AC-BAG-002
+  품목명: 슬링백
+  카테고리: Bag
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 준비완료
+- shot_id: AC-BAG-003-S1
+  품목ID: AC-BAG-003
+  품목명: 토트백
+  카테고리: Bag
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 준비완료
+- shot_id: AC-BAG-003-S2
+  품목ID: AC-BAG-003
+  품목명: 토트백
+  카테고리: Bag
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 준비완료
+- shot_id: AC-BAG-004-S1
+  품목ID: AC-BAG-004
+  품목명: 더플백
+  카테고리: Bag
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 준비완료
+- shot_id: AC-BAG-004-S2
+  품목ID: AC-BAG-004
+  품목명: 더플백
+  카테고리: Bag
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 준비완료
+- shot_id: AC-BAG-005-S1
+  품목ID: AC-BAG-005
+  품목명: 여행용 캐리어
+  카테고리: Bag
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: goods
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 러버 패치 + 손잡이 텍스트로고
+  상태: 준비완료
+- shot_id: AC-BAG-005-S2
+  품목ID: AC-BAG-005
+  품목명: 여행용 캐리어
+  카테고리: Bag
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: goods
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 러버 패치 + 손잡이 텍스트로고
+  상태: 준비완료
+- shot_id: AC-CAP-001-S1
+  품목ID: AC-CAP-001
+  품목명: 볼캡
+  카테고리: Hats & Caps
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: cap
+  벤치마크: New Era / 이미스
+  로고: 정면 조합로고 자수 + 측면 텍스트로고
+  상태: 준비완료
+- shot_id: AC-CAP-001-S2
+  품목ID: AC-CAP-001
+  품목명: 볼캡
+  카테고리: Hats & Caps
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: cap
+  벤치마크: New Era / 이미스
+  로고: 정면 조합로고 자수 + 측면 텍스트로고
+  상태: 준비완료
+- shot_id: AC-CAP-002-S1
+  품목ID: AC-CAP-002
+  품목명: 러닝캡
+  카테고리: Hats & Caps
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: cap
+  벤치마크: New Era / 이미스
+  로고: 정면 조합로고 자수 + 측면 텍스트로고
+  상태: 준비완료
+- shot_id: AC-CAP-002-S2
+  품목ID: AC-CAP-002
+  품목명: 러닝캡
+  카테고리: Hats & Caps
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: cap
+  벤치마크: New Era / 이미스
+  로고: 정면 조합로고 자수 + 측면 텍스트로고
+  상태: 준비완료
+- shot_id: AC-CAP-003-S1
+  품목ID: AC-CAP-003
+  품목명: 버킷햇
+  카테고리: Hats & Caps
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: cap
+  벤치마크: New Era / 이미스
+  로고: 정면 조합로고 자수 + 측면 텍스트로고
+  상태: 준비완료
+- shot_id: AC-CAP-003-S2
+  품목ID: AC-CAP-003
+  품목명: 버킷햇
+  카테고리: Hats & Caps
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: cap
+  벤치마크: New Era / 이미스
+  로고: 정면 조합로고 자수 + 측면 텍스트로고
+  상태: 준비완료
+- shot_id: AC-CAP-004-S1
+  품목ID: AC-CAP-004
+  품목명: 비니
+  카테고리: Hats & Caps
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: beanie
+  벤치마크: New Era / 이미스
+  로고: 커프 정면 가죽·우븐 패치 (조합로고)
+  상태: 준비완료
+- shot_id: AC-CAP-004-S2
+  품목ID: AC-CAP-004
+  품목명: 비니
+  카테고리: Hats & Caps
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: beanie
+  벤치마크: New Era / 이미스
+  로고: 커프 정면 가죽·우븐 패치 (조합로고)
+  상태: 준비완료
+- shot_id: LS-KIT-001-S1
+  품목ID: LS-KIT-001
+  품목명: 텀블러
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: tumbler
+  벤치마크: Stanley / 써모스 코리아
+  로고: 몸통 정면 조합로고 + 반대면 각인
+  상태: 준비완료
+- shot_id: LS-KIT-001-S2
+  품목ID: LS-KIT-001
+  품목명: 텀블러
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: tumbler
+  벤치마크: Stanley / 써모스 코리아
+  로고: 몸통 정면 조합로고 + 반대면 각인
+  상태: 준비완료
+- shot_id: LS-KIT-001-S3
+  품목ID: LS-KIT-001
+  품목명: 텀블러
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 연출 컷
+  템플릿: T03
+  모델: null
+  매칭기유형: tumbler
+  벤치마크: Stanley / 써모스 코리아
+  로고: 몸통 정면 조합로고 + 반대면 각인
+  상태: 준비완료
+- shot_id: LS-KIT-002-S1
+  품목ID: LS-KIT-002
+  품목명: 보틀
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: tumbler
+  벤치마크: Stanley / 써모스 코리아
+  로고: 몸통 정면 조합로고 + 반대면 각인
+  상태: 준비완료
+- shot_id: LS-KIT-002-S2
+  품목ID: LS-KIT-002
+  품목명: 보틀
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: tumbler
+  벤치마크: Stanley / 써모스 코리아
+  로고: 몸통 정면 조합로고 + 반대면 각인
+  상태: 준비완료
+- shot_id: LS-KIT-002-S3
+  품목ID: LS-KIT-002
+  품목명: 보틀
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 연출 컷
+  템플릿: T03
+  모델: null
+  매칭기유형: tumbler
+  벤치마크: Stanley / 써모스 코리아
+  로고: 몸통 정면 조합로고 + 반대면 각인
+  상태: 준비완료
+- shot_id: LS-KIT-003-S1
+  품목ID: LS-KIT-003
+  품목명: 머그
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: tumbler
+  벤치마크: Stanley / 써모스 코리아
+  로고: 몸통 정면 조합로고 + 반대면 각인
+  상태: 준비완료
+- shot_id: LS-KIT-003-S2
+  품목ID: LS-KIT-003
+  품목명: 머그
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: tumbler
+  벤치마크: Stanley / 써모스 코리아
+  로고: 몸통 정면 조합로고 + 반대면 각인
+  상태: 준비완료
+- shot_id: LS-KIT-003-S3
+  품목ID: LS-KIT-003
+  품목명: 머그
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 연출 컷
+  템플릿: T03
+  모델: null
+  매칭기유형: tumbler
+  벤치마크: Stanley / 써모스 코리아
+  로고: 몸통 정면 조합로고 + 반대면 각인
+  상태: 준비완료
+- shot_id: LS-KIT-004-S1
+  품목ID: LS-KIT-004
+  품목명: 식기 세트
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: goods
+  벤치마크: 미선정
+  로고: 접시 뒷면 형압·하단 각인
+  상태: 준비완료
+- shot_id: LS-KIT-004-S2
+  품목ID: LS-KIT-004
+  품목명: 식기 세트
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: goods
+  벤치마크: 미선정
+  로고: 접시 뒷면 형압·하단 각인
+  상태: 준비완료
+- shot_id: LS-KIT-004-S3
+  품목ID: LS-KIT-004
+  품목명: 식기 세트
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 연출 컷
+  템플릿: T03
+  모델: null
+  매칭기유형: goods
+  벤치마크: 미선정
+  로고: 접시 뒷면 형압·하단 각인
+  상태: 준비완료
+- shot_id: LS-KIT-005-S1
+  품목ID: LS-KIT-005
+  품목명: 보관용기
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 누끼 정면
+  템플릿: T06
+  모델: null
+  매칭기유형: goods
+  벤치마크: 미선정
+  로고: 뚜껑 형압 + 측면 소형 프린트
+  상태: 준비완료
+- shot_id: LS-KIT-005-S2
+  품목ID: LS-KIT-005
+  품목명: 보관용기
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 로고 디테일 클로즈업
+  템플릿: T06
+  모델: null
+  매칭기유형: goods
+  벤치마크: 미선정
+  로고: 뚜껑 형압 + 측면 소형 프린트
+  상태: 준비완료
+- shot_id: LS-KIT-005-S3
+  품목ID: LS-KIT-005
+  품목명: 보관용기
+  카테고리: Kitchenware (드링크웨어 포함)
+  컷: 연출 컷
+  템플릿: T03
+  모델: null
+  매칭기유형: goods
+  벤치마크: 미선정
+  로고: 뚜껑 형압 + 측면 소형 프린트
+  상태: 준비완료
+- shot_id: FA-ATH-001-S1
+  품목ID: FA-ATH-001
+  품목명: 레깅스
+  카테고리: Athleisure
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-F-EA01
+  매칭기유형: bottom
+  벤치마크: lululemon / 안다르
+  로고: 허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-001-S2
+  품목ID: FA-ATH-001
+  품목명: 레깅스
+  카테고리: Athleisure
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-F-EA01
+  매칭기유형: bottom
+  벤치마크: lululemon / 안다르
+  로고: 허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-002-S1
+  품목ID: FA-ATH-002
+  품목명: 조거 팬츠
+  카테고리: Athleisure
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-M-EA01
+  매칭기유형: bottom
+  벤치마크: lululemon / 안다르
+  로고: 허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-002-S2
+  품목ID: FA-ATH-002
+  품목명: 조거 팬츠
+  카테고리: Athleisure
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-M-EA01
+  매칭기유형: bottom
+  벤치마크: lululemon / 안다르
+  로고: 허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-003-S1
+  품목ID: FA-ATH-003
+  품목명: 스포츠 브라·크롭탑
+  카테고리: Athleisure
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-F-EA01
+  매칭기유형: top
+  벤치마크: lululemon / 안다르
+  로고: 왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-003-S2
+  품목ID: FA-ATH-003
+  품목명: 스포츠 브라·크롭탑
+  카테고리: Athleisure
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-F-EA01
+  매칭기유형: top
+  벤치마크: lululemon / 안다르
+  로고: 왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-004-S1
+  품목ID: FA-ATH-004
+  품목명: 기능성 반팔 티
+  카테고리: Athleisure
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-M-NE01
+  매칭기유형: top
+  벤치마크: lululemon / 안다르
+  로고: 왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-004-S2
+  품목ID: FA-ATH-004
+  품목명: 기능성 반팔 티
+  카테고리: Athleisure
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-M-NE01
+  매칭기유형: top
+  벤치마크: lululemon / 안다르
+  로고: 왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-005-S1
+  품목ID: FA-ATH-005
+  품목명: 하프집업 풀오버
+  카테고리: Athleisure
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-F-EA01
+  매칭기유형: top
+  벤치마크: lululemon / 안다르
+  로고: 왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-005-S2
+  품목ID: FA-ATH-005
+  품목명: 하프집업 풀오버
+  카테고리: Athleisure
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-F-EA01
+  매칭기유형: top
+  벤치마크: lululemon / 안다르
+  로고: 왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-006-S1
+  품목ID: FA-ATH-006
+  품목명: 바람막이 재킷
+  카테고리: Athleisure
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-M-EA01
+  매칭기유형: top
+  벤치마크: lululemon / 안다르
+  로고: 왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-006-S2
+  품목ID: FA-ATH-006
+  품목명: 바람막이 재킷
+  카테고리: Athleisure
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-M-EA01
+  매칭기유형: top
+  벤치마크: lululemon / 안다르
+  로고: 왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-007-S1
+  품목ID: FA-ATH-007
+  품목명: 트레이닝 쇼츠
+  카테고리: Athleisure
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-F-NE01
+  매칭기유형: bottom
+  벤치마크: lululemon / 안다르
+  로고: 허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-ATH-007-S2
+  품목ID: FA-ATH-007
+  품목명: 트레이닝 쇼츠
+  카테고리: Athleisure
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-F-NE01
+  매칭기유형: bottom
+  벤치마크: lululemon / 안다르
+  로고: 허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-001-S1
+  품목ID: FA-YC-001
+  품목명: 오버핏 반팔 티
+  카테고리: Young Casual
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-M-NE01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-001-S2
+  품목ID: FA-YC-001
+  품목명: 오버핏 반팔 티
+  카테고리: Young Casual
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-M-NE01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-002-S1
+  품목ID: FA-YC-002
+  품목명: 맨투맨
+  카테고리: Young Casual
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-F-EA01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-002-S2
+  품목ID: FA-YC-002
+  품목명: 맨투맨
+  카테고리: Young Casual
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-F-EA01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-003-S1
+  품목ID: FA-YC-003
+  품목명: 후디
+  카테고리: Young Casual
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-M-EA01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-003-S2
+  품목ID: FA-YC-003
+  품목명: 후디
+  카테고리: Young Casual
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-M-EA01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-004-S1
+  품목ID: FA-YC-004
+  품목명: 니트 가디건
+  카테고리: Young Casual
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-F-NE01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-004-S2
+  품목ID: FA-YC-004
+  품목명: 니트 가디건
+  카테고리: Young Casual
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-F-NE01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-005-S1
+  품목ID: FA-YC-005
+  품목명: 커브드 치노 팬츠
+  카테고리: Young Casual
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-M-NE01
+  매칭기유형: bottom
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 뒤 허리 우븐 라벨 + 뒷주머니 소형 자수
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-005-S2
+  품목ID: FA-YC-005
+  품목명: 커브드 치노 팬츠
+  카테고리: Young Casual
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-M-NE01
+  매칭기유형: bottom
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 뒤 허리 우븐 라벨 + 뒷주머니 소형 자수
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-006-S1
+  품목ID: FA-YC-006
+  품목명: 와이드 팬츠
+  카테고리: Young Casual
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-F-EA01
+  매칭기유형: bottom
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 뒤 허리 우븐 라벨 + 뒷주머니 소형 자수
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-006-S2
+  품목ID: FA-YC-006
+  품목명: 와이드 팬츠
+  카테고리: Young Casual
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-F-EA01
+  매칭기유형: bottom
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 뒤 허리 우븐 라벨 + 뒷주머니 소형 자수
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-007-S1
+  품목ID: FA-YC-007
+  품목명: 셔츠
+  카테고리: Young Casual
+  컷: 착장 풀샷
+  템플릿: T05
+  모델: VM-M-EA01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: FA-YC-007-S2
+  품목ID: FA-YC-007
+  품목명: 셔츠
+  카테고리: Young Casual
+  컷: 로고 디테일 클로즈업
+  템플릿: T04
+  모델: VM-M-EA01
+  매칭기유형: top
+  벤치마크: Uniqlo / 무신사 스탠다드
+  로고: 왼가슴 톤온톤 소형 자수 + 넥 라벨·헴 플래그
+  상태: 모델 확정 대기(BL-001)
+- shot_id: AC-BAG-001-S3
+  품목ID: AC-BAG-001
+  품목명: 데이팩 백팩
+  카테고리: Bag
+  컷: 착장 컷
+  템플릿: T05
+  모델: VM-F-NE01
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 모델 확정 대기(BL-001)
+- shot_id: AC-BAG-002-S3
+  품목ID: AC-BAG-002
+  품목명: 슬링백
+  카테고리: Bag
+  컷: 착장 컷
+  템플릿: T05
+  모델: VM-M-NE01
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 모델 확정 대기(BL-001)
+- shot_id: AC-BAG-003-S3
+  품목ID: AC-BAG-003
+  품목명: 토트백
+  카테고리: Bag
+  컷: 착장 컷
+  템플릿: T05
+  모델: VM-F-EA01
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 모델 확정 대기(BL-001)
+- shot_id: AC-BAG-004-S3
+  품목ID: AC-BAG-004
+  품목명: 더플백
+  카테고리: Bag
+  컷: 착장 컷
+  템플릿: T05
+  모델: VM-M-EA01
+  매칭기유형: bag
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 패치 + 스트랩 우븐 테이프
+  상태: 모델 확정 대기(BL-001)
+- shot_id: AC-BAG-005-S3
+  품목ID: AC-BAG-005
+  품목명: 여행용 캐리어
+  카테고리: Bag
+  컷: 착장 컷
+  템플릿: T05
+  모델: VM-F-NE01
+  매칭기유형: goods
+  벤치마크: JanSport / 살로몬 Trailblazer
+  로고: 전면 상단 러버 패치 + 손잡이 텍스트로고
+  상태: 모델 확정 대기(BL-001)
+- shot_id: AC-CAP-001-S3
+  품목ID: AC-CAP-001
+  품목명: 볼캡
+  카테고리: Hats & Caps
+  컷: 착장 컷
+  템플릿: T05
+  모델: VM-M-NE01
+  매칭기유형: cap
+  벤치마크: New Era / 이미스
+  로고: 정면 조합로고 자수 + 측면 텍스트로고
+  상태: 모델 확정 대기(BL-001)
+- shot_id: AC-CAP-002-S3
+  품목ID: AC-CAP-002
+  품목명: 러닝캡
+  카테고리: Hats & Caps
+  컷: 착장 컷
+  템플릿: T05
+  모델: VM-F-EA01
+  매칭기유형: cap
+  벤치마크: New Era / 이미스
+  로고: 정면 조합로고 자수 + 측면 텍스트로고
+  상태: 모델 확정 대기(BL-001)
+- shot_id: AC-CAP-003-S3
+  품목ID: AC-CAP-003
+  품목명: 버킷햇
+  카테고리: Hats & Caps
+  컷: 착장 컷
+  템플릿: T05
+  모델: VM-M-EA01
+  매칭기유형: cap
+  벤치마크: New Era / 이미스
+  로고: 정면 조합로고 자수 + 측면 텍스트로고
+  상태: 모델 확정 대기(BL-001)
+- shot_id: AC-CAP-004-S3
+  품목ID: AC-CAP-004
+  품목명: 비니
+  카테고리: Hats & Caps
+  컷: 착장 컷
+  템플릿: T05
+  모델: VM-F-NE01
+  매칭기유형: beanie
+  벤치마크: New Era / 이미스
+  로고: 커프 정면 가죽·우븐 패치 (조합로고)
+  상태: 모델 확정 대기(BL-001)

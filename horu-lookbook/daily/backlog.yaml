@@ -7,3 +7,10 @@
   tool_need: image_gen
   status: 승인 대기
   done_when: "모델별 3뷰 얼굴·체형 일치 확인 → model_registry.yaml status를 approved로 변경"
+- id: BL-002
+  title: "Phase 1 비모델 컷 착수 (가방·캡 누끼, 텀블러 누끼·연출)"
+  added: 2026-11-20
+  scope: "준비완료 33컷 — daily/work_queue.yaml, 브리프 7절에서 매일 배정"
+  tool_need: [image_gen, bg_remove]
+  status: 승인 대기
+  done_when: "컷별 qa_check PASS + logo_review 4점 이상 → work_queue 상태 '완료'"

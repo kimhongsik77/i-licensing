@@ -93,6 +93,12 @@ BOTTOM_LOGO = {   # 하의는 가슴이 없으므로 카테고리별 하의 전�
  "SWM": "허리 소형 실리콘 텍스트로고",
 }
 
+def status_of(cat, phase):
+    """2026-11-20 사장님 '반영': 키즈 보류, Phase 1은 작업 대기열 등록, 나머지는 대기."""
+    if cat == "KID":
+        return "보류"
+    return "작업대기열" if phase == 1 else "대기"
+
 rows, counters = [], {}
 for cat, name, en, mtype, note in ITEMS:
     big, cname, phase, bench, logo, slogan, shoot, assets = CATS[cat]
@@ -111,7 +117,7 @@ for cat, name, en, mtype, note in ITEMS:
     rows.append({"품목ID": f"{big_code}-{cat}-{counters[cat]:03d}", "대분류": big, "카테고리": cname, "품목명": name,
                  "영문명": en, "매칭기유형": mtype, "단계": f"Phase {phase}", "벤치마크(글로벌/국내)": bench,
                  "로고 기본 적용": logo, "슬로건 상황": slogan, "촬영 방식": shoot, "추천 모델": model,
-                 "기존 실사 폴더": assets, "상태": "대기", "비고": note})
+                 "기존 실사 폴더": assets, "상태": status_of(cat, phase), "비고": note})
 (OUT / "product_master.yaml").write_text(yaml.safe_dump({"source": "브랜드소개서 Type3 공식 17개 카테고리 + Drive Product 폴더 (2026-11-20)",
                                                           "items": rows}, allow_unicode=True, sort_keys=False), encoding="utf-8")
 with open(OUT / "product_master.csv", "w", newline="", encoding="utf-8-sig") as f:

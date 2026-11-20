@@ -178,6 +178,27 @@ def options_for_shortfall(plan, cfg):
     ]
 
 
+def queue_section(plan):
+    """daily/work_queue.yaml(품목 마스터 기반 촬영 컷 대기열)에서 오늘 작업 후보를 뽑는다."""
+    qp = DAILY / "work_queue.yaml"
+    if not qp.exists():
+        return ["", "## 7. 오늘 작업 컷 후보", "", "- 대기열 없음 → `python3 horu-lookbook/daily/build_queue.py` 실행 필요"]
+    shots = (yaml.safe_load(qp.read_text(encoding="utf-8")) or {}).get("shots", [])
+    ready = [x for x in shots if x["상태"] == "준비완료"]
+    waiting = [x for x in shots if x["상태"].startswith("모델 확정 대기")]
+    done = [x for x in shots if x["상태"] == "완료"]
+    n = plan["totals"]["base_ai"] + plan["totals"]["local_composite"]          # 오늘 만들 원본컷 수
+    pick = ready[:n]
+    L = ["", "## 7. 오늘 작업 컷 후보 (품목 마스터 Phase 1)", "",
+         f"- 대기열: 전체 {len(shots)}컷 / 준비완료 {len(ready)} / 모델 확정 대기 {len(waiting)} / 완료 {len(done)}",
+         f"- 오늘 배정: 원본 {n}컷 중 준비완료 컷 {len(pick)}개", "",
+         "| 컷 ID | 품목 | 컷 | 템플릿 | 로고 기본 적용 |", "|---|---|---|---|---|"]
+    L += [f"| {x['shot_id']} | {x['품목명']} | {x['컷']} | {x['템플릿']} | {x['로고']} |" for x in pick]
+    if waiting:
+        L += ["", f"- 모델 컷 {len(waiting)}개는 BL-001(모델 기준 시트) 확정 후 자동으로 '준비완료' 전환"]
+    return L
+
+
 def write_brief(plan, rep, cfg):
     t = plan["totals"]
     L = [f"# HÖRU 일일 작업 브리프 — {plan['date']}", "",
@@ -211,6 +232,7 @@ def write_brief(plan, rep, cfg):
     opts = options_for_shortfall(plan, cfg)
     if opts:
         L += ["", "## 6. 작업량 확대 선택지 (참고)", ""] + [f"- {o}" for o in opts]
+    L += queue_section(plan)
     L += ["", "---", "승인: `python3 horu-lookbook/daily/planner.py approve --date " + plan["date"] + "` (또는 채팅으로 \"승인\")"]
     BRIEFS.mkdir(parents=True, exist_ok=True)
     out = BRIEFS / f"{plan['date']}.md"
