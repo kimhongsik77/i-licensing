@@ -166,6 +166,23 @@ def check_consistency(pages, spec, registry, rep):
                 f"라인 내 모델 {len(models)}명 ({', '.join(sorted(models))}) — 3명 이상이면 일관성 저하")
 
 
+def check_model_specs(registry, rules, rep):
+    """모델 레지스트리의 체형이 body_spec(성별별 최소 키·최대 몸무게)을 충족하는지 검사."""
+    spec = rules.get("virtual_model_policy", {}).get("body_spec")
+    if not spec or not isinstance(registry, dict):
+        return
+    for mid, m in registry.items():
+        g = (m or {}).get("gender")
+        if g not in spec:
+            rep.add(f"MODEL:{mid}", "consistency", False, f"성별 미기재/알 수 없음 '{g}' — female/male로 등록 필요")
+            continue
+        h, w = m.get("height_cm"), m.get("weight_kg")
+        need = spec[g]
+        ok = h is not None and w is not None and h >= need["min_height_cm"] and w <= need["max_weight_kg"]
+        rep.add(f"MODEL:{mid}", "consistency", ok,
+                f"{g} {h}cm/{w}kg (기준 {need['min_height_cm']}cm 이상·{need['max_weight_kg']}kg 이하)")
+
+
 def check_info(page, spec, rep):
     tpl = spec["templates"].get(page["template"])
     if tpl is None:
@@ -239,7 +256,8 @@ def main():
     base = Path(args.manifest).parent
     doc = manifest.get("document", {})
     preset = doc.get("preset", "web")
-    registry = set(manifest.get("model_registry", []))
+    raw_registry = manifest.get("model_registry", []) or []
+    registry = set(raw_registry)  # list 또는 dict(id → 체형정보) 모두 지원
     pages = manifest.get("pages", [])
     if not pages:
         print("[오류] manifest에 pages가 없습니다.", file=sys.stderr)
@@ -252,6 +270,7 @@ def main():
         check_image(p, rules, spec, base, preset, rep)
         check_info(p, spec, rep)
     check_consistency(pages, spec, registry, rep)
+    check_model_specs(raw_registry, rules, rep)
     check_document(pages, rules, rep)
 
     total, detail = score(rep, rules)

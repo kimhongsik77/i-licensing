@@ -3,7 +3,9 @@
 document:
   title: HÖRU SS27 Lookbook (demo)
   preset: web
-model_registry: [VM-A01, VM-B01]
+model_registry:             # 가상모델 등록부 — 체형 기준 검사 대상
+  VM-A01: {gender: female, height_cm: 178, weight_kg: 49}   # SS27 p1 표기 178cm (몸무게는 예시값)
+  VM-B01: {gender: female, height_cm: 168, weight_kg: 48}   # 키 미달 → 실패 예시
 pages:
   - id: p01
     template: T01_model_reference

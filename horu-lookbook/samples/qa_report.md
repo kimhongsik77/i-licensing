@@ -1,13 +1,13 @@
 # QA 리포트 — HÖRU SS27 Lookbook (demo)
 
-**총점 86.5 / 100 → FAIL** (합격선 85, 블로커 1건으로 불합격)
+**총점 85.7 / 100 → FAIL** (합격선 85, 블로커 1건으로 불합격)
 
 | 영역 | 점수 | 검사수 | 실패 |
 |---|---|---|---|
 | brand | 26.7 / 30 | 9 | 1 |
 | compliance | 21.4 / 25 | 7 | 1 |
 | image_quality | 23.4 / 25 | 16 | 1 |
-| consistency | 7.5 / 10 | 4 | 1 |
+| consistency | 6.7 / 10 | 6 | 2 |
 | info | 7.5 / 10 | 4 | 1 |
 
 ## 실패 항목 (수정 필요)
@@ -19,6 +19,7 @@
 | p05 | info | 필수 필드 누락: scene_tag |
 | p09 | brand | 컬러 #C0392B → 최근접 #A89C89 (ΔE 62.1, 허용 6) |
 | p05 | consistency | model_id 'VM-B02' 미등록/누락 — 얼굴 일관성 보장 불가 |
+| MODEL:VM-B01 | consistency | female 168cm/48kg (기준 170cm 이상·50kg 이하) |
 
 ## 전체 로그
 
@@ -61,6 +62,8 @@
 - ✅ [p02] consistency: model_id 'VM-A01' 등록됨
 - ❌ [p05] consistency: model_id 'VM-B02' 미등록/누락 — 얼굴 일관성 보장 불가
 - ✅ [LINE:LINE_A] consistency: 라인 내 모델 2명 (VM-A01, VM-B02) — 3명 이상이면 일관성 저하
+- ✅ [MODEL:VM-A01] consistency: female 178cm/49kg (기준 170cm 이상·50kg 이하)
+- ❌ [MODEL:VM-B01] consistency: female 168cm/48kg (기준 170cm 이상·50kg 이하)
 - ✅ [DOC] compliance: 클로징 페이지(T08_closing) 있음
 
 > 자동 검수 범위 밖: AI 생성 결함(손·텍스트 왜곡), 로고 위치/보호공간, 무드 적합성 → 2·3차 검수에서 확인

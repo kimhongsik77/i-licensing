@@ -1,5 +1,5 @@
 {
-  "total": 86.5,
+  "total": 85.7,
   "pass": false,
   "blockers": 1,
   "detail": {
@@ -22,10 +22,10 @@
       "fails": 1
     },
     "consistency": {
-      "score": 7.5,
+      "score": 6.7,
       "max": 10,
-      "checks": 4,
-      "fails": 1
+      "checks": 6,
+      "fails": 2
     },
     "info": {
       "score": 7.5,
@@ -268,6 +268,18 @@
       "category": "consistency",
       "ok": true,
       "message": "라인 내 모델 2명 (VM-A01, VM-B02) — 3명 이상이면 일관성 저하"
+    },
+    {
+      "page": "MODEL:VM-A01",
+      "category": "consistency",
+      "ok": true,
+      "message": "female 178cm/49kg (기준 170cm 이상·50kg 이하)"
+    },
+    {
+      "page": "MODEL:VM-B01",
+      "category": "consistency",
+      "ok": false,
+      "message": "female 168cm/48kg (기준 170cm 이상·50kg 이하)"
     },
     {
       "page": "DOC",

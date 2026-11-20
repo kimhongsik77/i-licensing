@@ -85,6 +85,14 @@ virtual_model_policy:          # [결정 필요] 지침 v1.0은 'AI 티 나는 �
   label_required: true          # Model Reference 시트에 'VIRTUAL' 표기
   forbidden_artifacts: [broken_text, extra_fingers, warped_logo, asymmetric_eyes, melted_accessory]
   registry_required: true       # model_registry에 등록된 ID만 사용 (얼굴 일관성)
+  body_spec:                    # 착장컷 모델 체형 기준 (사장님 지시 2026-11-20) — 해외·국내 최상위 모델 체형에 준함
+    female: {min_height_cm: 170, max_weight_kg: 50}
+    male:   {min_height_cm: 185, max_weight_kg: 74}
+    applies_to: [T01, T02, T04, T05]   # 착장(모델) 템플릿
+
+product_background:            # 상품컷 배경 (사장님 지시 2026-11-20)
+  rule: "벤치마크 이미지의 배경에서 힌트를 얻어 자유 표현"
+  still_forbidden: ["벤치마크 이미지 배경 그대로 복제", "식별 가능한 랜드마크", "타 브랜드 간판·소품 문구"]
 
 scoring:
   pass_score: 85
