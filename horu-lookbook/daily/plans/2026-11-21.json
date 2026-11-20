@@ -1,7 +1,7 @@
 {
   "date": "2026-11-21",
-  "status": "승인",
-  "created": "2026-11-20 22:05",
+  "status": "승인 대기",
+  "created": "2026-11-21 08:47",
   "yield": 0.7,
   "yield_source": "초기 가정",
   "budgets": [
@@ -19,16 +19,15 @@
         "image_gen": 1,
         "bg_remove": 1
       },
-      "source": "추정",
+      "source": "실측",
       "note": "무료 월 20~50회(자료 상충, 2026-11-20 검색) → 하한 20 적용",
-      "remaining": 20,
+      "remaining": 0,
       "days_left": 30
     },
     {
       "tool": "Adobe Express/Firefly",
       "order": 2,
       "capabilities": [
-        "image_gen",
         "bg_remove",
         "expand",
         "layout",
@@ -39,9 +38,9 @@
         "image_gen": 1,
         "bg_remove": 1
       },
-      "source": "추정",
+      "source": "실측",
       "note": "무료 월 약 25 크레딧(제3자, 2026-11-20 검색)",
-      "remaining": 25,
+      "remaining": 0,
       "days_left": 30
     },
     {
@@ -86,7 +85,5 @@
     "finished_planned": 24,
     "target": 50,
     "shortfall": 26
-  },
-  "approved_at": "2026-11-20 22:05",
-  "approval_note": "채팅 승인: 모델작업 지금하자 (BL-001)"
+  }
 }
