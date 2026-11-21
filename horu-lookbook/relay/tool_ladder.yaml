@@ -78,6 +78,19 @@ tools:
     unit: 확인 필요
     reset: 확인 필요
     note: 수동 생성 → 투입함. 하루 2~3장(추정) 소량 보충
+- name: Kaggle 무료 GPU (FLUX.2 klein 4B)
+  order: 8
+  enabled: false
+  capabilities:
+  - image_gen
+  credit:
+    remaining: null
+    per_period: 30
+    period_days: 7
+    unit: GPU 시간
+    reset: 주간(변동)
+    note: 2026-11-21 사장님 결정. api.kaggle.com 토큰 등록 후 활성화. 참조 이미지(모델 시트)로 얼굴 유지. 9B
+      비상업 모델 차단
 upgrade_rules:
   to_level_1:
     clean_switches: 5
