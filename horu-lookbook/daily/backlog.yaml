@@ -14,3 +14,15 @@
   tool_need: [image_gen, bg_remove]
   status: 승인 대기
   done_when: "컷별 qa_check PASS + logo_review 4점 이상 → work_queue 상태 '완료'"
+- id: BL-003
+  title: "Figma Weave 시범 1컷 (Nano Banana 2.1, 모델 시트 참조, 2K 4:5) — FA-ATH-001-S1 재생성"
+  added: 2026-11-21
+  scope: "10 Weave 크레딧. 얼굴 일관성·해상도·로고 합성 후 QA 판정"
+  tool_need: image_gen
+  status: 승인 대기
+  done_when: "QA PASS(logo_review 4점↑) 시 Weave를 착장 컷 주력 툴로 지정"
+- id: BL-004
+  title: "Kaggle API 토큰 등록 (무료 GPU 경로, 대안)"
+  added: 2026-11-21
+  status: 승인 대기
+  done_when: "api.kaggle.com 토큰 등록 → runner.py 2컷 시범"
