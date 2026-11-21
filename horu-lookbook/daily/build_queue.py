@@ -34,6 +34,9 @@ SHOTS = {
 }
 
 
+KEEP = ("진행", "완료", "재작업 필요", "보류")   # 사람이 판단한 상태는 재생성 시에도 유지
+
+
 def main():
     try:
         items = yaml.safe_load(CAT.read_text(encoding="utf-8"))["items"]
@@ -65,10 +68,11 @@ def main():
             shots.append({"shot_id": sid, "품목ID": it["품목ID"], "품목명": it["품목명"], "카테고리": it["카테고리"],
                           "컷": label, "템플릿": tpl, "모델": model, "매칭기유형": it["매칭기유형"],
                           "벤치마크": it["벤치마크(글로벌/국내)"], "로고": it["로고 기본 적용"],
-                          "상태": prev.get("상태") if prev.get("상태") in ("진행", "완료") else
-                          ("준비완료" if ready else "모델 확정 대기(BL-001)")})
+                          "상태": prev.get("상태") if prev.get("상태") in KEEP else
+                          ("준비완료" if ready else "모델 확정 대기(BL-001)"),
+                          **({"메모": prev["메모"]} if prev.get("메모") else {})})
     # 정렬: 준비완료 먼저 → 카테고리 순 유지
-    shots.sort(key=lambda s: (s["상태"] != "준비완료", s["상태"] == "완료"))
+    shots.sort(key=lambda s: (s["상태"] != "준비완료", s["상태"] == "완료"))   # 재작업·보류는 뒤로
     OUT.write_text(yaml.safe_dump({"note": "자동 생성 — 수정은 catalog/build_catalog.py 또는 model_registry.yaml에서",
                                    "shots": shots}, allow_unicode=True, sort_keys=False), encoding="utf-8")
     from collections import Counter

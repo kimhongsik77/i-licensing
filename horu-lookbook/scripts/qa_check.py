@@ -139,6 +139,16 @@ def check_image(page, rules, spec, base, preset, rep):
     gray.thumbnail((1024, 1024))
     hist = gray.histogram()
     clipped = sum(hist[250:]) / max(1, sum(hist))
+    try:                                                         # 흰 배경 스튜디오 컷: 가장자리에 닿은 하이라이트(배경)는 제외
+        import numpy as np
+        from scipy import ndimage
+        g = np.asarray(gray) >= 250
+        lab, n = ndimage.label(g)
+        border = set(np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))) - {0}
+        subj = g & ~np.isin(lab, list(border))
+        clipped = float(subj.sum()) / g.size
+    except ImportError:
+        pass
     lim = rules["image"]["max_clipped_highlight_ratio"]
     rep.add(pid, "image_quality", clipped <= lim, f"하이라이트 클리핑 {clipped:.1%} (상한 {lim:.0%})")
 

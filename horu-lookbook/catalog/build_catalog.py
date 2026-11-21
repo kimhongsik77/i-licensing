@@ -117,7 +117,7 @@ for cat, name, en, mtype, note in ITEMS:
     rows.append({"품목ID": f"{big_code}-{cat}-{counters[cat]:03d}", "대분류": big, "카테고리": cname, "품목명": name,
                  "영문명": en, "매칭기유형": mtype, "단계": f"Phase {phase}", "벤치마크(글로벌/국내)": bench,
                  "로고 기본 적용": logo, "슬로건 상황": slogan, "촬영 방식": shoot, "추천 모델": model,
-                 "기존 실사 폴더": assets, "상태": status_of(cat, phase), "비고": note})
+                 "기존 시안 폴더(AI·비공식 로고)": assets, "상태": status_of(cat, phase), "비고": note})
 (OUT / "product_master.yaml").write_text(yaml.safe_dump({"source": "브랜드소개서 Type3 공식 17개 카테고리 + Drive Product 폴더 (2026-11-20)",
                                                           "items": rows}, allow_unicode=True, sort_keys=False), encoding="utf-8")
 with open(OUT / "product_master.csv", "w", newline="", encoding="utf-8-sig") as f:

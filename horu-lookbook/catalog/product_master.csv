@@ -1,4 +1,4 @@
-﻿품목ID,대분류,카테고리,품목명,영문명,매칭기유형,단계,벤치마크(글로벌/국내),로고 기본 적용,슬로건 상황,촬영 방식,추천 모델,기존 실사 폴더,상태,비고
+﻿품목ID,대분류,카테고리,품목명,영문명,매칭기유형,단계,벤치마크(글로벌/국내),로고 기본 적용,슬로건 상황,촬영 방식,추천 모델,기존 시안 폴더(AI·비공식 로고),상태,비고
 FA-ATH-001,패션,Athleisure,레깅스,Leggings,bottom,Phase 1,lululemon / 안다르,허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",작업대기열,
 FA-ATH-002,패션,Athleisure,조거 팬츠,Jogger Pants,bottom,Phase 1,lululemon / 안다르,허리밴드 뒤 텍스트로고(실리콘) + 왼쪽 엉덩이 반사,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",작업대기열,
 FA-ATH-003,패션,Athleisure,스포츠 브라·크롭탑,Sports Bra / Crop Top,top,Phase 1,lululemon / 안다르,왼가슴 조합로고 반사 + 뒷목 MAIN 슬로건 프린트,active_apparel(MAIN),착장,"VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01","Fashion/Athleisure & Gymwear, OLD/에스레저",작업대기열,

@@ -14,7 +14,7 @@ cut_types:
   local_composite: {label: "실사 상품+로고 합성(로컬)", ops: {}}   # 크레딧 0, 보유 실사 자산 수에 제한
   derived:        {label: "파생컷(컬러·포맷 변형)", ops: {}}
 
-local_composite_daily_max: 10   # [확인 필요] HÖRU Product 폴더 실사 자산으로 하루 만들 수 있는 합성컷 수
+local_composite_daily_max: 0    # 2026-11-21 점검: Product 폴더 185장은 AI 시안(비공식 로고·Ö 누락 사례)으로 확인 → 실사 바탕 없음. 실제 촬영본 확보 시 상향
 
 # 크레딧 정보가 '미확인'일 때 쓰는 보수적 가정 (출처·날짜 기록, 실측되면 tool_ladder 값이 우선)
 capacity_assumptions:

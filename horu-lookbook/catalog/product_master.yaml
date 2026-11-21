@@ -12,7 +12,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/Athleisure & Gymwear, OLD/에스레저
+  기존 시안 폴더(AI·비공식 로고): Fashion/Athleisure & Gymwear, OLD/에스레저
   상태: 작업대기열
   비고: ''
 - 품목ID: FA-ATH-002
@@ -27,7 +27,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/Athleisure & Gymwear, OLD/에스레저
+  기존 시안 폴더(AI·비공식 로고): Fashion/Athleisure & Gymwear, OLD/에스레저
   상태: 작업대기열
   비고: ''
 - 품목ID: FA-ATH-003
@@ -42,7 +42,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/Athleisure & Gymwear, OLD/에스레저
+  기존 시안 폴더(AI·비공식 로고): Fashion/Athleisure & Gymwear, OLD/에스레저
   상태: 작업대기열
   비고: ''
 - 품목ID: FA-ATH-004
@@ -57,7 +57,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/Athleisure & Gymwear, OLD/에스레저
+  기존 시안 폴더(AI·비공식 로고): Fashion/Athleisure & Gymwear, OLD/에스레저
   상태: 작업대기열
   비고: ''
 - 품목ID: FA-ATH-005
@@ -72,7 +72,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/Athleisure & Gymwear, OLD/에스레저
+  기존 시안 폴더(AI·비공식 로고): Fashion/Athleisure & Gymwear, OLD/에스레저
   상태: 작업대기열
   비고: ''
 - 품목ID: FA-ATH-006
@@ -87,7 +87,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/Athleisure & Gymwear, OLD/에스레저
+  기존 시안 폴더(AI·비공식 로고): Fashion/Athleisure & Gymwear, OLD/에스레저
   상태: 작업대기열
   비고: SS27 p8 착장 존재
 - 품목ID: FA-ATH-007
@@ -102,7 +102,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/Athleisure & Gymwear, OLD/에스레저
+  기존 시안 폴더(AI·비공식 로고): Fashion/Athleisure & Gymwear, OLD/에스레저
   상태: 작업대기열
   비고: ''
 - 품목ID: FA-YC-001
@@ -117,7 +117,7 @@ items:
   슬로건 상황: casual_apparel(SUB_A)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: SS27 p1~3 착장 존재
 - 품목ID: FA-YC-002
@@ -132,7 +132,7 @@ items:
   슬로건 상황: casual_apparel(SUB_A)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: SS27 p4~6 착장 존재
 - 품목ID: FA-YC-003
@@ -147,7 +147,7 @@ items:
   슬로건 상황: casual_apparel(SUB_A)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: ''
 - 품목ID: FA-YC-004
@@ -162,7 +162,7 @@ items:
   슬로건 상황: casual_apparel(SUB_A)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: SS27 p7 착장 존재
 - 품목ID: FA-YC-005
@@ -177,7 +177,7 @@ items:
   슬로건 상황: casual_apparel(SUB_A)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: 국내 트렌드(검색 3.4배)
 - 품목ID: FA-YC-006
@@ -192,7 +192,7 @@ items:
   슬로건 상황: casual_apparel(SUB_A)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: SS27 착장 존재
 - 품목ID: FA-YC-007
@@ -207,7 +207,7 @@ items:
   슬로건 상황: casual_apparel(SUB_A)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: ''
 - 품목ID: FA-GLF-001
@@ -222,7 +222,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: golf, OLD/골프
+  기존 시안 폴더(AI·비공식 로고): golf, OLD/골프
   상태: 대기
   비고: ''
 - 품목ID: FA-GLF-002
@@ -237,7 +237,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: golf, OLD/골프
+  기존 시안 폴더(AI·비공식 로고): golf, OLD/골프
   상태: 대기
   비고: ''
 - 품목ID: FA-GLF-003
@@ -252,7 +252,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: golf, OLD/골프
+  기존 시안 폴더(AI·비공식 로고): golf, OLD/골프
   상태: 대기
   비고: ''
 - 품목ID: FA-GLF-004
@@ -267,7 +267,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: golf, OLD/골프
+  기존 시안 폴더(AI·비공식 로고): golf, OLD/골프
   상태: 대기
   비고: ''
 - 품목ID: FA-GLF-005
@@ -282,7 +282,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: golf, OLD/골프
+  기존 시안 폴더(AI·비공식 로고): golf, OLD/골프
   상태: 대기
   비고: ''
 - 품목ID: FA-TEN-001
@@ -297,7 +297,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: OLD/테니스
+  기존 시안 폴더(AI·비공식 로고): OLD/테니스
   상태: 대기
   비고: ''
 - 품목ID: FA-TEN-002
@@ -312,7 +312,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: OLD/테니스
+  기존 시안 폴더(AI·비공식 로고): OLD/테니스
   상태: 대기
   비고: ''
 - 품목ID: FA-TEN-003
@@ -327,7 +327,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: OLD/테니스
+  기존 시안 폴더(AI·비공식 로고): OLD/테니스
   상태: 대기
   비고: ''
 - 품목ID: FA-TEN-004
@@ -342,7 +342,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: OLD/테니스
+  기존 시안 폴더(AI·비공식 로고): OLD/테니스
   상태: 대기
   비고: ''
 - 품목ID: FA-OUT-001
@@ -357,7 +357,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/outdoor, OLD/아웃도어
+  기존 시안 폴더(AI·비공식 로고): Fashion/outdoor, OLD/아웃도어
   상태: 대기
   비고: ''
 - 품목ID: FA-OUT-002
@@ -372,7 +372,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/outdoor, OLD/아웃도어
+  기존 시안 폴더(AI·비공식 로고): Fashion/outdoor, OLD/아웃도어
   상태: 대기
   비고: ''
 - 품목ID: FA-OUT-003
@@ -387,7 +387,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/outdoor, OLD/아웃도어
+  기존 시안 폴더(AI·비공식 로고): Fashion/outdoor, OLD/아웃도어
   상태: 대기
   비고: ''
 - 품목ID: FA-OUT-004
@@ -402,7 +402,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/outdoor, OLD/아웃도어
+  기존 시안 폴더(AI·비공식 로고): Fashion/outdoor, OLD/아웃도어
   상태: 대기
   비고: ''
 - 품목ID: FA-CYC-001
@@ -417,7 +417,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/cycle, OLD/사이클
+  기존 시안 폴더(AI·비공식 로고): Fashion/cycle, OLD/사이클
   상태: 대기
   비고: ''
 - 품목ID: FA-CYC-002
@@ -432,7 +432,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Fashion/cycle, OLD/사이클
+  기존 시안 폴더(AI·비공식 로고): Fashion/cycle, OLD/사이클
   상태: 대기
   비고: ''
 - 품목ID: FA-SWM-001
@@ -447,7 +447,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 유형 근사(top) — 전용 배치 필요
 - 품목ID: FA-SWM-002
@@ -462,7 +462,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: FA-SWM-003
@@ -477,7 +477,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: FA-FSH-001
@@ -492,7 +492,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: FA-FSH-002
@@ -507,7 +507,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: FA-KID-001
@@ -522,7 +522,7 @@ items:
   슬로건 상황: casual_apparel(SUB_A)
   촬영 방식: 착장(키즈 모델 기준 없음)
   추천 모델: 키즈 기준 미정
-  기존 실사 폴더: Fashion/KIDS
+  기존 시안 폴더(AI·비공식 로고): Fashion/KIDS
   상태: 보류
   비고: 키즈 모델 기준 결정 필요
 - 품목ID: FA-KID-002
@@ -537,7 +537,7 @@ items:
   슬로건 상황: casual_apparel(SUB_A)
   촬영 방식: 착장(키즈 모델 기준 없음)
   추천 모델: 키즈 기준 미정
-  기존 실사 폴더: Fashion/KIDS
+  기존 시안 폴더(AI·비공식 로고): Fashion/KIDS
   상태: 보류
   비고: 키즈 모델 기준 결정 필요
 - 품목ID: AC-BAG-001
@@ -552,7 +552,7 @@ items:
   슬로건 상황: bag(MAIN)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Bag, bag, OLD/여행용가방
+  기존 시안 폴더(AI·비공식 로고): Bag, bag, OLD/여행용가방
   상태: 작업대기열
   비고: ''
 - 품목ID: AC-BAG-002
@@ -567,7 +567,7 @@ items:
   슬로건 상황: bag(MAIN)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Bag, bag, OLD/여행용가방
+  기존 시안 폴더(AI·비공식 로고): Bag, bag, OLD/여행용가방
   상태: 작업대기열
   비고: ''
 - 품목ID: AC-BAG-003
@@ -582,7 +582,7 @@ items:
   슬로건 상황: bag(MAIN)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Bag, bag, OLD/여행용가방
+  기존 시안 폴더(AI·비공식 로고): Bag, bag, OLD/여행용가방
   상태: 작업대기열
   비고: ''
 - 품목ID: AC-BAG-004
@@ -597,7 +597,7 @@ items:
   슬로건 상황: bag(MAIN)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Bag, bag, OLD/여행용가방
+  기존 시안 폴더(AI·비공식 로고): Bag, bag, OLD/여행용가방
   상태: 작업대기열
   비고: ''
 - 품목ID: AC-BAG-005
@@ -612,7 +612,7 @@ items:
   슬로건 상황: bag(MAIN)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: Bag, bag, OLD/여행용가방
+  기존 시안 폴더(AI·비공식 로고): Bag, bag, OLD/여행용가방
   상태: 작업대기열
   비고: 전용 배치 필요
 - 품목ID: AC-CAP-001
@@ -627,7 +627,7 @@ items:
   슬로건 상황: cap(SUB_B)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: ''
 - 품목ID: AC-CAP-002
@@ -642,7 +642,7 @@ items:
   슬로건 상황: cap(SUB_B)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: ''
 - 품목ID: AC-CAP-003
@@ -657,7 +657,7 @@ items:
   슬로건 상황: cap(SUB_B)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: 유형 근사(cap)
 - 품목ID: AC-CAP-004
@@ -672,7 +672,7 @@ items:
   슬로건 상황: cap(SUB_B)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: ''
 - 품목ID: AC-EYE-001
@@ -687,7 +687,7 @@ items:
   슬로건 상황: campaign_call(SUB_B)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: AC-EYE-002
@@ -702,7 +702,7 @@ items:
   슬로건 상황: campaign_call(SUB_B)
   촬영 방식: 누끼+착장
   추천 모델: VM-F-EA01, VM-M-EA01, VM-F-NE01, VM-M-NE01
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: AC-ACC-001
@@ -717,7 +717,7 @@ items:
   슬로건 상황: campaign_call(SUB_B)
   촬영 방식: 누끼
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: AC-ACC-002
@@ -732,7 +732,7 @@ items:
   슬로건 상황: campaign_call(SUB_B)
   촬영 방식: 누끼
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: AC-SGD-001
@@ -747,7 +747,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 누끼
   추천 모델: '-'
-  기존 실사 폴더: OLD/사이클, golf
+  기존 시안 폴더(AI·비공식 로고): OLD/사이클, golf
   상태: 대기
   비고: ''
 - 품목ID: AC-SGD-002
@@ -762,7 +762,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 누끼
   추천 모델: '-'
-  기존 실사 폴더: OLD/사이클, golf
+  기존 시안 폴더(AI·비공식 로고): OLD/사이클, golf
   상태: 대기
   비고: 기존 AI 이미지 깨진 텍스트로 제외 이력
 - 품목ID: AC-SGD-003
@@ -777,7 +777,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 누끼
   추천 모델: '-'
-  기존 실사 폴더: OLD/사이클, golf
+  기존 시안 폴더(AI·비공식 로고): OLD/사이클, golf
   상태: 대기
   비고: ''
 - 품목ID: AC-SGD-004
@@ -792,7 +792,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 누끼
   추천 모델: '-'
-  기존 실사 폴더: OLD/사이클, golf
+  기존 시안 폴더(AI·비공식 로고): OLD/사이클, golf
   상태: 대기
   비고: ''
 - 품목ID: AC-SGD-005
@@ -807,7 +807,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 누끼
   추천 모델: '-'
-  기존 실사 폴더: OLD/사이클, golf
+  기존 시안 폴더(AI·비공식 로고): OLD/사이클, golf
   상태: 대기
   비고: ''
 - 품목ID: AC-SGD-006
@@ -822,7 +822,7 @@ items:
   슬로건 상황: active_apparel(MAIN)
   촬영 방식: 누끼
   추천 모델: '-'
-  기존 실사 폴더: OLD/사이클, golf
+  기존 시안 폴더(AI·비공식 로고): OLD/사이클, golf
   상태: 대기
   비고: ''
 - 품목ID: LS-KIT-001
@@ -837,7 +837,7 @@ items:
   슬로건 상황: drinkware(SUB_B)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: ''
 - 품목ID: LS-KIT-002
@@ -852,7 +852,7 @@ items:
   슬로건 상황: drinkware(SUB_B)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: ''
 - 품목ID: LS-KIT-003
@@ -867,7 +867,7 @@ items:
   슬로건 상황: drinkware(SUB_B)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: 유형 근사(tumbler)
 - 품목ID: LS-KIT-004
@@ -882,7 +882,7 @@ items:
   슬로건 상황: drinkware(SUB_B)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: ''
 - 품목ID: LS-KIT-005
@@ -897,7 +897,7 @@ items:
   슬로건 상황: drinkware(SUB_B)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 작업대기열
   비고: ''
 - 품목ID: LS-CMP-001
@@ -912,7 +912,7 @@ items:
   슬로건 상황: drinkware(SUB_B)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: Fashion/camping
+  기존 시안 폴더(AI·비공식 로고): Fashion/camping
   상태: 대기
   비고: ''
 - 품목ID: LS-CMP-002
@@ -927,7 +927,7 @@ items:
   슬로건 상황: drinkware(SUB_B)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: Fashion/camping
+  기존 시안 폴더(AI·비공식 로고): Fashion/camping
   상태: 대기
   비고: ''
 - 품목ID: LS-CMP-003
@@ -942,7 +942,7 @@ items:
   슬로건 상황: drinkware(SUB_B)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: Fashion/camping
+  기존 시안 폴더(AI·비공식 로고): Fashion/camping
   상태: 대기
   비고: ''
 - 품목ID: LS-CMP-004
@@ -957,7 +957,7 @@ items:
   슬로건 상황: drinkware(SUB_B)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: Fashion/camping
+  기존 시안 폴더(AI·비공식 로고): Fashion/camping
   상태: 대기
   비고: 기존 '주방' 이미지 경쟁사 문구 제외 이력
 - 품목ID: LS-HOM-001
@@ -972,7 +972,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 기존 침구매장 이미지 문구 크롭 이력
 - 품목ID: LS-HOM-002
@@ -987,7 +987,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: LS-HOM-003
@@ -1002,7 +1002,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: ''
 - 품목ID: LS-DSK-001
@@ -1017,7 +1017,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
 - 품목ID: LS-DSK-002
@@ -1032,7 +1032,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
 - 품목ID: LS-DSK-003
@@ -1047,7 +1047,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
 - 품목ID: LS-DSK-004
@@ -1062,7 +1062,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
 - 품목ID: LS-DSK-005
@@ -1077,7 +1077,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 누끼+연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
 - 품목ID: LS-DEC-001
@@ -1092,7 +1092,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
 - 품목ID: LS-DEC-002
@@ -1107,7 +1107,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
 - 품목ID: LS-DEC-003
@@ -1122,7 +1122,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
 - 품목ID: LS-DEC-004
@@ -1137,7 +1137,7 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
 - 품목ID: LS-DEC-005
@@ -1152,6 +1152,6 @@ items:
   슬로건 상황: editorial_story(SUB_A)
   촬영 방식: 연출
   추천 모델: '-'
-  기존 실사 폴더: '-'
+  기존 시안 폴더(AI·비공식 로고): '-'
   상태: 대기
   비고: 소개서 제안 라인업
