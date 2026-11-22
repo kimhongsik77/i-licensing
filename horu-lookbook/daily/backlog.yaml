@@ -19,7 +19,7 @@
   added: 2026-11-21
   scope: "10 Weave 크레딧. 얼굴 일관성·해상도·로고 합성 후 QA 판정"
   tool_need: image_gen
-  status: 승인 대기
+  status: 중단 (2026-11-22 — Weave 무료 실행 2회 소진, 유료 플랜 필요. 크레딧 차감 없음)
   done_when: "QA PASS(logo_review 4점↑) 시 Weave를 착장 컷 주력 툴로 지정"
 - id: BL-004
   title: "Kaggle API 토큰 등록 (무료 GPU 경로, 대안)"

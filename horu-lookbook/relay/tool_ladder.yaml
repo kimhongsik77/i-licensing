@@ -40,18 +40,19 @@ tools:
     reset: 확인 필요
 - name: Figma Weave (Nano Banana 2.1)
   order: 4
-  enabled: true
+  enabled: false
   capabilities:
   - image_gen
   - upscale
   credit:
-    remaining: null
+    remaining: 0
     unit: Weave 크레딧(Figma AI 크레딧과 별도)
     reset: 확인 필요
     cost:
       image_gen: 10
     note: '2026-11-21 발견: 참조이미지 최대 14장(얼굴 유지)·최대 4K. 2K 1컷=10크레딧(견적). 매 실행 사장님 승인(Approve/Cancel)
-      필수. 상업이용 조건 확인 필요'
+      필수. 상업이용 조건 확인 필요 | 2026-11-22 실행 거절: ''무료 Weave 모델 실행 2회 소진'' → 유료 플랜 필요. 무료
+      경로에서 제외'
 - name: 이미지생성AI(이름 확인 필요)
   order: 5
   enabled: false

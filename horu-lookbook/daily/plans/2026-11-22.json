@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "status": "승인 대기",
+  "status": "승인",
   "created": "2026-11-21 23:48",
   "yield": 0.7,
   "yield_source": "초기 가정",
@@ -101,5 +101,7 @@
     "finished_planned": 6,
     "target": 50,
     "shortfall": 44
-  }
+  },
+  "approved_at": "2026-11-22 11:37",
+  "approval_note": "채팅 승인: BL-003 Weave 시범 1컷"
 }
